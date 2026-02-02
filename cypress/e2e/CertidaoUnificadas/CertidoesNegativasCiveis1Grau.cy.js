@@ -9,35 +9,38 @@ describe('Certidões Negativas Cíveis 1º Grau', () => {
   
   
   it('1 - Processos Cíveis para Pessoa Física / Validação de Label', () => {
-cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(1) > .group > .h-9 > .ml-10').click()
-    cy.get('.max-h-screen > :nth-child(1) > :nth-child(1) > .rounded > .inline-block').click()
-    cy.get('.pb-2')
-   .should('contain.text', 'Certidão Cível - Pessoa Física - 1º Grau')
-    cy.get('.grid > :nth-child(1) > .inline-block')
-      .should('contain.text', 'Nome Completo')
- cy.get('#main-content label.text-center').should('have.text', '\n            \n            Deseja usar nome social?\n            ');
-    cy.get('.p-checkbox-box').click()
-   cy.get('.ng-star-inserted > .inline-block')
-    .should('contain.text', 'Nome Social')
-    cy.get(':nth-child(3) > .inline-block')
-      .should('contain.text', 'CPF')
-    cy.get(':nth-child(4) > .inline-block')
-      .should('contain.text', 'Data Nascimento')
-    cy.get(':nth-child(5) > .inline-block')
-      .should('contain.text', 'Nome da Mãe')
-    cy.get(':nth-child(6) > .inline-block')
-     .should('contain.text', 'Nome do Pai')
-    cy.contains('label', 'Natureza')
-       .should('contain.text', 'Natureza')
-    cy.get('#cancel-save > .w-full > .p-button-label')
-      .should('contain.text', 'Voltar')
-    cy.get('form.ng-untouched > .flex')
-       .should('contain.text', 'Emitir')
-    cy.contains('label', 'Código de Segurança')
-      .should('contain.text', 'Código de Segurança')
-cy.get('#main-content label.text-center').click();
-cy.get('#main-content div.grid > div:nth-child(1)').click();
-
+    cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(1) > .group > .h-9 > .ml-10').click()
+        cy.get('.max-h-screen > :nth-child(1) > :nth-child(1) > .rounded > .inline-block').click()
+        cy.get('.pb-2')
+       .should('contain.text', 'Certidão Cível - Pessoa Física - 1º Grau')
+        cy.get('.grid > :nth-child(1) > .inline-block')
+          .should('contain.text', 'Nome Completo')
+     cy.get('#main-content label.text-center').should('have.text', '\n            \n            Deseja usar nome social?\n            ');
+        cy.get('.p-checkbox-box').click()
+       cy.get('.ng-star-inserted > .inline-block')
+        .should('contain.text', 'Nome Social')
+        cy.get(':nth-child(3) > .inline-block')
+          .should('contain.text', 'CPF')
+        cy.get(':nth-child(4) > .inline-block')
+          .should('contain.text', 'Data Nascimento')
+        cy.get(':nth-child(5) > .inline-block')
+          .should('contain.text', 'Nome da Mãe')
+        cy.get(':nth-child(6) > .inline-block')
+         .should('contain.text', 'Nome do Pai')
+        cy.contains('label', 'Natureza')
+           .should('contain.text', 'Natureza')
+        cy.get('#cancel-save > .w-full > .p-button-label')
+          .should('contain.text', 'Voltar')
+        cy.get('form.ng-untouched > .flex')
+           .should('contain.text', 'Emitir')
+        cy.contains('label', 'Código de Segurança')
+          .should('contain.text', 'Código de Segurança')
+    cy.get('#main-content label.text-center').click();
+    cy.get('#main-content div.grid > div:nth-child(1)').click();
+    
+    cy.get('#main-content div.grid').click();
+    cy.get('#main-content div:nth-child(6)').click();
+    cy.get('#main-content span.ml-auto').should('have.text', '\n                (opcional)\n              ');
   })
   
 
@@ -99,7 +102,7 @@ cy.get('#main-content div.grid > div:nth-child(1)').click();
     
   })
 
-  it.skip('4 - Processos Cíveis para Pessoa Física / Emissão sem informar Natureza', () => {
+  it('4 - Processos Cíveis para Pessoa Física / Emissão sem informar Natureza', () => {
 cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(1) > .group > .h-9 > .ml-10').click()
     cy.get('.max-h-screen > :nth-child(1) > :nth-child(1) > .rounded > .inline-block').click()
     cy.get('.pb-2')

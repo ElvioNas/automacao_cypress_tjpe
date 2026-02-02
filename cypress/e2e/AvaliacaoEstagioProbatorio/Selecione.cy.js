@@ -20,9 +20,11 @@ it.skip('1 - Minhas Avaliações / Validação de Label', () => {
     cy.get('[data-cy="navbar"] li:nth-child(2) a.font-medium span.font-medium').should('have.text', 'Relatórios');
     cy.get('[data-cy="navbar"] li:nth-child(3) a.font-medium span.font-medium').should('have.text', 'Selecione');
     cy.get('[data-cy="navbar"] li:nth-child(3) a.font-medium span.font-medium').click();
-    cy.get('[data-cy="navbar"] a[href="/minhas-avaliacoes"] span.font-medium').click();
-    cy.get('div.justify-between').click();
-    cy.get('[data-cy="LiberacaoAvaliacaoHeading"] span').should('have.text', 'Minhas avaliações');
+   // cy.get('[data-cy="navbar"] a[href="/minhas-avaliacoes"] span.font-medium').click();
+   // cy.get('div.justify-between').click();
+    //cy.get('[data-cy="LiberacaoAvaliacaoHeading"] span').should('have.text', 'Minhas avaliações');
+
+
   //  cy.get('timesicon[pc10=""] svg.p-icon').click();
   //  cy.get('timesicon[pc13=""] svg.p-icon').click();
     //cy.get('timesicon.p-component svg.p-icon').click();

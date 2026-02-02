@@ -927,7 +927,6 @@ cy.get('div.ng-star-inserted > div.justify-end > div.items-center > a.underline 
   })
 
   it.skip('33 - Relatório de Certidões Criminais Emitidas / Campos Obrigatórios', () => {
-
     cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/')

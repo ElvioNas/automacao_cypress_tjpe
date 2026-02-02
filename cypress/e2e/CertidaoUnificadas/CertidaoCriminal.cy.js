@@ -5,7 +5,7 @@ describe('Certidões Criminais', () => {
 
      })
   
-  it.only('1 - Pessoa Fisíca Certidão Criminal / Validação de Label', () => {
+  it('1 - Pessoa Fisíca Certidão Criminal / Validação de Label', () => {
  cy.get('.hidden > :nth-child(1) > .space-y-1 > :nth-child(1) > .group > .flex').click()
     cy.get('.pb-2')
       .should('contain.text', 'Certidão Criminal - Pessoa Física')

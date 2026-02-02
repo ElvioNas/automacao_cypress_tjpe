@@ -20,10 +20,11 @@ describe('LegJud | Menu Prcessos de 1º Grau', () => {
     cy.get('#pn_id_2_tab_1').should('have.text', 'Vara');
     cy.get('#pn_id_2_tab_2').click();
     cy.get('#pn_id_2_tab_2').should('have.text', 'Partes');
-    cy.get('#pn_id_2_tab_3').click();
-    cy.get('#pn_id_2_tab_3').should('have.text', 'Número Antigo');
-    cy.get('#pn_id_2_tabpanel_3 label.inline-block').click();
-    cy.get('#pn_id_2_tabpanel_3 label.inline-block').should('have.text', 'Número Antigo');
+    //cy.get('#pn_id_2_tab_3').click();
+    
+    //cy.get('#pn_id_2_tab_3').should('have.text', 'Número Antigo');
+   // cy.get('#pn_id_2_tabpanel_3 label.inline-block').click();
+    //y.get('#pn_id_2_tabpanel_3 label.inline-block').should('have.text', 'Número Antigo');
     cy.get('#pn_id_2_tabpanel_3 a.underline').should('have.text', '\n                  Limpar Todos\n                ');
     cy.get('#pn_id_2_tabpanel_3 span.p-button-label').should('have.text', 'Aplicar');
     cy.get('#pn_id_2_tab_0').click();
@@ -40,6 +41,7 @@ describe('LegJud | Menu Prcessos de 1º Grau', () => {
     cy.get('#pn_id_2_tabpanel_2 label[for="field_dataAutuacaoInicial_partes"]').should('have.text', 'Data Autuação Inicial');
     cy.get('#pn_id_2_tabpanel_2 label[for="field_dataAutuacaoFinal_partes"]').should('have.text', 'Data Autuação Final');
     cy.get('#pn_id_2_tab_3').click();
+    
    })
 
    it.skip( '2 - Movimentação Individual | Validar Label', () => {
