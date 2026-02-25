@@ -48,7 +48,7 @@ describe('Simap | Servidores', () => {
    cy.get('[data-cy="entityCreateCancelButton"]').should('have.text', '\n            \n              \n              Cancelar\n            \n          ');
    })
 
-    it.skip( '2 - Servidores | Novo Servidor com CPF já cadastrado', () => {
+    it.skip( '2 - Meus Processos | Pesquisar', () => {
    
    //Métricas
    
