@@ -1,6 +1,6 @@
 describe('Simap | Distribuição', () => {
 
-   it.skip( '1 - Distribuição | Validar Label', () => {
+   it( '1 - Distribuição | Validar Label', () => {
    
    //Métricas
    
@@ -41,7 +41,7 @@ describe('Simap | Distribuição', () => {
    cy.get('[data-cy="entityCreateCancelButton"] span.w-full').should('have.text', '\n                \n                Cancelar\n              ');
    })
 
-   it.skip( '2 - Distribuição | Criar Nova Distribuição', () => {
+   it( '2 - Distribuição | Criar Nova Distribuição', () => {
    
    //Métricas
    
@@ -71,7 +71,7 @@ describe('Simap | Distribuição', () => {
    cy.get('div.break-words').should('have.text', 'Distribuição inserida com sucesso.');
    })
 
-   it.skip( '3 - Distribuição | Pesquisar Nova Distribuição', () => {
+   it( '3 - Distribuição | Pesquisar Nova Distribuição', () => {
    
    //Métricas
    
@@ -93,7 +93,7 @@ describe('Simap | Distribuição', () => {
    cy.get('button.p-button-sm.p-button-rounded span.p-button-label').click();
    })
 
-   it.skip( '4 - Distribuição | Editar Nova Distribuição', () => {
+   it( '4 - Distribuição | Editar Nova Distribuição', () => {
    
    //Métricas
    

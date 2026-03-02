@@ -5,7 +5,7 @@ describe('Estágio Probatório / Gerenciamento', () => {
   cy.login() 
 
      }) */
-it.skip('1 - Realizar avaliação SGP / Validação de Label', () => {
+it('1 - Realizar avaliação SGP / Validação de Label', () => {
     cy.viewport(1920, 1080);
     cy.visit('https://avaliacaoestagioprobatorio.teste.svc.tjpe.jus.br/')
      cy.get('[data-cy="navbar"] span.ml-auto').click();
@@ -32,7 +32,7 @@ it.skip('1 - Realizar avaliação SGP / Validação de Label', () => {
     cy.get('label[for="chefia"]').should('have.text', 'Chefia');
 })
 
-it.skip('2 - Realizar avaliação SGP / Consultar com dados inexistente', () => {
+it('2 - Realizar avaliação SGP / Consultar com dados inexistente', () => {
     cy.viewport(1920, 1080);
     cy.visit('https://avaliacaoestagioprobatorio.teste.svc.tjpe.jus.br/')
      cy.get('[data-cy="navbar"] span.ml-auto').click();
@@ -48,7 +48,7 @@ it.skip('2 - Realizar avaliação SGP / Consultar com dados inexistente', () => 
     cy.get('div.p-toast-summary').should('have.text', ' Não existem avaliações pendentes para a matrícula informada. ');
 })
 
-it.skip('3 - Liberar avaliação de estágio probatório / Validação de Label', () => {
+it('3 - Liberar avaliação de estágio probatório / Validação de Label', () => {
     cy.viewport(1920, 1080);
     cy.visit('https://avaliacaoestagioprobatorio.teste.svc.tjpe.jus.br/')
       cy.get('[data-cy="navbar"] span.ml-auto').click();
@@ -65,7 +65,7 @@ it.skip('3 - Liberar avaliação de estágio probatório / Validação de Label'
     cy.get('label.p-col-12').should('have.text', 'Matrícula do avaliado:');
 })
 
-it.skip('4 - Liberar avaliação de estágio probatório / Pesquisar com dados inexistestes', () => {
+it('4 - Liberar avaliação de estágio probatório / Pesquisar com dados inexistestes', () => {
     cy.viewport(1920, 1080);
     cy.visit('https://avaliacaoestagioprobatorio.teste.svc.tjpe.jus.br/')
     cy.get('[data-cy="navbar"] span.ml-auto').click();
@@ -88,7 +88,7 @@ it.skip('4 - Liberar avaliação de estágio probatório / Pesquisar com dados i
 })
 
 
-it.skip('5 - Gerenciar tarefas de produtividade / Validação de Label', () => {
+it('5 - Gerenciar tarefas de produtividade / Validação de Label', () => {
     cy.viewport(1920, 1080);
     cy.visit('https://avaliacaoestagioprobatorio.teste.svc.tjpe.jus.br/')
       
@@ -138,7 +138,7 @@ it.skip('5 - Gerenciar tarefas de produtividade / Validação de Label', () => {
     
 })
 
-it.skip('6 - Gerenciar tarefas de produtividade / Pesquisar com Filtro', () => {
+it('6 - Gerenciar tarefas de produtividade / Pesquisar com Filtro', () => {
     cy.viewport(1920, 1080);
     cy.visit('https://avaliacaoestagioprobatorio.teste.svc.tjpe.jus.br/')
         cy.get('[data-cy="navbar"] span.ml-auto').click();
@@ -171,7 +171,7 @@ it.skip('6 - Gerenciar tarefas de produtividade / Pesquisar com Filtro', () => {
     
 })
 
-it.skip('7 - Gerenciar tarefas de produtividade / Pesquisar com Filtro e Visualizar', () => {
+it('7 - Gerenciar tarefas de produtividade / Pesquisar com Filtro e Visualizar', () => {
     cy.viewport(1920, 1080);
     cy.visit('https://avaliacaoestagioprobatorio.teste.svc.tjpe.jus.br/')
       
@@ -207,7 +207,7 @@ it.skip('7 - Gerenciar tarefas de produtividade / Pesquisar com Filtro e Visuali
 })
 
 
-it.skip('8 - Gerenciar tarefas de produtividade / Filtro utilizar o botão Limpar Todos', () => {
+it('8 - Gerenciar tarefas de produtividade / Filtro utilizar o botão Limpar Todos', () => {
     cy.viewport(1920, 1080);
     cy.visit('https://avaliacaoestagioprobatorio.teste.svc.tjpe.jus.br/')
  
@@ -254,7 +254,7 @@ it.skip('8 - Gerenciar tarefas de produtividade / Filtro utilizar o botão Limpa
     cy.get('a.underline span').click();
 })
 
-it.skip('9 - Gerenciar atividades de produtividade / Validação de Label', () => {
+it('9 - Gerenciar atividades de produtividade / Validação de Label', () => {
     cy.viewport(1920, 1080);
     cy.visit('https://avaliacaoestagioprobatorio.teste.svc.tjpe.jus.br/')
   

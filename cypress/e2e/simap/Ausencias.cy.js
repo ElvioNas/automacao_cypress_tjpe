@@ -1,6 +1,6 @@
 describe('Sismap | Ausências', () => {
 
-   it.skip( '1 - Ausências | Validar Label', () => {
+   it( '1 - Ausências | Validar Label', () => {
    
    //Métricas
    
@@ -46,7 +46,7 @@ describe('Sismap | Ausências', () => {
    cy.get('[data-cy="entityCreateCancelButton"] span.p-button-label').should('have.text', 'Cancelar');
    })
 
-   it.skip( '2 - Ausências | Criar Ausência', () => {
+   it( '2 - Ausências | Criar Ausência', () => {
    
    //Métricas
    
@@ -78,7 +78,7 @@ describe('Sismap | Ausências', () => {
    cy.get('div.break-words').should('have.text', 'Nova Ausência Salva com sucesso!');
    })
 
-    it.skip( '3 - Ausências | Pesquisar Ausência', () => {
+    it( '3 - Ausências | Pesquisar Ausência', () => {
    
    //Métricas
    
@@ -98,7 +98,7 @@ describe('Sismap | Ausências', () => {
    cy.get('button.p-button-sm.p-button-rounded span.p-button-label').click();
     })
 
-     it.skip( '4 - Ausências | Editar Ausência', () => {
+     it( '4 - Ausências | Editar Ausência', () => {
    
    //Métricas
    

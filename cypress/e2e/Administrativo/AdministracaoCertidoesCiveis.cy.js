@@ -6,7 +6,7 @@ describe('Administração Certidões Cíveis', () => {
 
      }) */
   
-it.skip('1 - Consultar Pendências Pessoa Física / Validação de Label', () => {
+it('1 - Consultar Pendências Pessoa Física / Validação de Label', () => {
 
 cy.viewport(1920, 1080);
 cy.viewport(1920, 1080);
@@ -34,7 +34,7 @@ cy.get('div.bg-white').click();
 cy.get('#no-result span.block').should('have.text', 'Nenhuma solicitação encontrada');
   })
     
-it.skip('2 - Consultar Pendências Pessoa Física / Campos Obrigatórios', () => {
+it('2 - Consultar Pendências Pessoa Física / Campos Obrigatórios', () => {
 
   //Campos Obrigatórios
     cy.viewport(1920, 1080);
@@ -57,7 +57,7 @@ cy.get('div.bg-white').click();
 cy.get('small.p-error').should('have.text', ' CPF inválido. ');
 })
 
-  it.skip('3 - Consultar Pendências Pessoa Física / Pesquisar Homônimo por CPF', () => {
+  it('3 - Consultar Pendências Pessoa Física / Pesquisar Homônimo por CPF', () => {
 
    cy.viewport(1920, 1080);
     // cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -80,7 +80,7 @@ cy.get('[data-cy="documento"]').type('138.201.414-72');
 cy.get('span.p-button-label').click();
   })
 
-    it.skip('4 - Consultar Pendências Pessoa Física / Pesquisar Homônimo por Nome', () => {
+    it('4 - Consultar Pendências Pessoa Física / Pesquisar Homônimo por Nome', () => {
 
 cy.viewport(1920, 1080);
 
@@ -104,7 +104,7 @@ cy.get('[data-cy="documento"]').type('138.201.414-72');
 cy.get('span.p-button-label').click();
     })
 
-   it.skip('5 - Consultar Pendências Pessoa Física / Pesquisar Homônimo com CPF e Nome', () => {
+   it('5 - Consultar Pendências Pessoa Física / Pesquisar Homônimo com CPF e Nome', () => {
 
 cy.viewport(1920, 1080);
      //cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -128,7 +128,7 @@ cy.get('span.p-button-label').click();
 
    
 
-   it.skip('6 - Consultar Pendências Pessoa Física / Pesquisar por CPF', () => {
+   it('6 - Consultar Pendências Pessoa Física / Pesquisar por CPF', () => {
 
 cy.viewport(1920, 1080);
 
@@ -152,7 +152,7 @@ cy.get('[data-cy="documento"]').type('572.424.060-21');
 cy.get('button.p-button').click();
    })
 
-   it.skip('7 - Consultar Pendências Pessoa Física / Pesquisar por CPF e Exibir', () => {
+   it('7 - Consultar Pendências Pessoa Física / Pesquisar por CPF e Exibir', () => {
 
 cy.viewport(1920, 1080);
 
@@ -175,7 +175,7 @@ cy.get('span.p-button-label').click();
 cy.get('tr[data-cy="entityTable"]:nth-of-type(1) button.p-ripple').click();
    })
 
-    it.skip('8 - Consultar Pendências Pessoa Física / Pesquisar por CPF, Exibir e Voltar', () => {
+    it('8 - Consultar Pendências Pessoa Física / Pesquisar por CPF, Exibir e Voltar', () => {
 
 cy.viewport(1920, 1080);
      //cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -198,7 +198,7 @@ cy.get('span.p-button-label').click();
 cy.get('tr[data-cy="entityTable"]:nth-of-type(1) span.pi').click();
     })
     
-   it.skip('9 - Consultar Pendências Pessoa Física / Pesquisar por Nome', () => {
+   it('9 - Consultar Pendências Pessoa Física / Pesquisar por Nome', () => {
 
     cy.viewport(1920, 1080);
    // cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -218,7 +218,7 @@ cy.get('tr[data-cy="entityTable"]:nth-of-type(1) span.pi').click();
 
    })
 
-    it.skip('10 - Consultar Pendências Pessoa Física / Pesquisar com CPF e Nome', () => {
+    it('10 - Consultar Pendências Pessoa Física / Pesquisar com CPF e Nome', () => {
 
 cy.viewport(1920, 1080);
 
@@ -241,7 +241,7 @@ cy.get('[data-cy="documento"]').type('572.424.060-21');
 cy.get('span.p-button-label').click();
     })
 
-   it.skip('11 - Consultar Pendências Pessoa Física / Pesquisar com CPF, Nome e Exibir', () => {
+   it('11 - Consultar Pendências Pessoa Física / Pesquisar com CPF, Nome e Exibir', () => {
 
     cy.viewport(1920, 1080);
     //cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -263,7 +263,7 @@ cy.get('span.p-button-label').click();
 
    })
 
-    it.skip('12 - Consultar Pendências Pessoa Física / Pesquisar com CPF, Nome, Exibir e Voltar', () => {
+    it('12 - Consultar Pendências Pessoa Física / Pesquisar com CPF, Nome, Exibir e Voltar', () => {
 
 cy.viewport(1920, 1080);
     // cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -287,7 +287,7 @@ cy.get('button.p-button').click();
 
     })
 
-    it.skip('13 - Consultar Pendências Pessoa Física / Limpar Informações', () => {
+    it('13 - Consultar Pendências Pessoa Física / Limpar Informações', () => {
 
 cy.viewport(1920, 1080);
 
@@ -311,7 +311,7 @@ cy.get('a.underline span').click();
     })
 
 
-  it.skip('14 - Consultar Pendências Pessoa Jurídica / Validação de Label', () => {
+  it('14 - Consultar Pendências Pessoa Jurídica / Validação de Label', () => {
 
 cy.viewport(1920, 1080);
 
@@ -339,7 +339,7 @@ cy.get('div.bg-white').click();
 cy.get('#no-result span.block').should('have.text', 'Nenhuma solicitação encontrada');
   })
 
-it.skip('15 - Consultar Pendências Pessoa Jurídica / Campos Obrigatórios', () => {
+it('15 - Consultar Pendências Pessoa Jurídica / Campos Obrigatórios', () => {
 
 cy.viewport(1920, 1080);
 
@@ -358,7 +358,7 @@ cy.get('div.validation-messages').click();
 cy.get('small.p-error').should('have.text', ' CNPJ inválido. ');
 })
 
-it.skip('16 - Consultar Pendências Pessoa Jurídica / Pesquisar por CNPJ', () => {
+it('16 - Consultar Pendências Pessoa Jurídica / Pesquisar por CNPJ', () => {
 
 cy.viewport(1920, 1080);
 
@@ -376,7 +376,7 @@ cy.get('[data-cy="documento"]').type('76.895.473/0001-66');
 cy.get('button.p-button').click();
 })
 
-it.skip('17 - Consultar Pendências Pessoa Jurídica / Pesquisar por CNPJ e Exibir', () => {
+it('17 - Consultar Pendências Pessoa Jurídica / Pesquisar por CNPJ e Exibir', () => {
 
 cy.viewport(1920, 1080);
 
@@ -395,7 +395,7 @@ cy.get('button.p-button').click();
 cy.get('[data-cy="entityTable"] span.p-button-label').click();
 })
 
-it.skip('18 - Consultar Pendências Pessoa Jurídica / Pesquisar por CNPJ, Exibir e Voltar', () => {
+it('18 - Consultar Pendências Pessoa Jurídica / Pesquisar por CNPJ, Exibir e Voltar', () => {
 
 cy.viewport(1920, 1080);
      //cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -414,7 +414,7 @@ cy.get('tr[data-cy="entityTable"]:nth-of-type(1) button.p-ripple').click();
 //cy.get('span.p-button-label').click();
 })
 
-it.skip('19 - Consultar Pendências Pessoa Jurídica / Limpar Informações', () => {
+it('19 - Consultar Pendências Pessoa Jurídica / Limpar Informações', () => {
 
 cy.viewport(1920, 1080);
 
@@ -432,7 +432,7 @@ cy.get('[data-cy="documento"]').type('11.111.111/1111-11');
 cy.get('a.underline span').click();
 })
 
-  it.skip('20 - Consultar Certidões / Validação de Label', () => {
+  it('20 - Consultar Certidões / Validação de Label', () => {
 
     cy.viewport(1920, 1080);
      //cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -465,7 +465,7 @@ cy.get('a.underline span').click();
     
 })
 
- it.skip('21 - Consultar Certidões / Campos Obrigatórios', () => {
+ it('21 - Consultar Certidões / Campos Obrigatórios', () => {
 
     cy.viewport(1920, 1080);
      //cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -498,7 +498,7 @@ cy.get('a.underline span').click();
 
     
 })
-it.skip('22 - Consultar Certidões / Limpar Informações', () => {
+it('22 - Consultar Certidões / Limpar Informações', () => {
 
     cy.viewport(1920, 1080);
     // cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -522,7 +522,7 @@ it.skip('22 - Consultar Certidões / Limpar Informações', () => {
     
 })
 
-it.skip('23 - Consultar Certidões / Consultar pelo CPF', () => {
+it('23 - Consultar Certidões / Consultar pelo CPF', () => {
 
     cy.viewport(1920, 1080);
      //cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -539,7 +539,7 @@ it.skip('23 - Consultar Certidões / Consultar pelo CPF', () => {
     cy.get('.justify-end > .flex > .p-component').click()
     
 })
-it.skip('24 - Consultar Certidões / Consultar pelo CPF e Exibir', () => {
+it('24 - Consultar Certidões / Consultar pelo CPF e Exibir', () => {
 
     cy.viewport(1920, 1080);
      //cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -562,7 +562,7 @@ it.skip('24 - Consultar Certidões / Consultar pelo CPF e Exibir', () => {
     
 })
 
-it.skip('25 - Consultar Certidões / Consultar pelo CPF, Exibir e Voltar', () => {
+it('25 - Consultar Certidões / Consultar pelo CPF, Exibir e Voltar', () => {
 
     cy.viewport(1920, 1080);
      //cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -585,7 +585,7 @@ it.skip('25 - Consultar Certidões / Consultar pelo CPF, Exibir e Voltar', () =>
     
 })
 
-it.skip('26 - Consultar Certidões / Consultar pelo CNPJ', () => {
+it('26 - Consultar Certidões / Consultar pelo CNPJ', () => {
 
     cy.viewport(1920, 1080);
      //cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -605,7 +605,7 @@ it.skip('26 - Consultar Certidões / Consultar pelo CNPJ', () => {
 
 })
 
-it.skip('27 - Consultar Certidões / Consultar pelo CNPJ e Exibir', () => {
+it('27 - Consultar Certidões / Consultar pelo CNPJ e Exibir', () => {
 
 cy.viewport(1920, 1080);
     //cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -642,7 +642,7 @@ cy.get('#viewer span:nth-child(47)').should('have.text', '33.217.425/0001-06');
 */
 })
 
-it.skip('28 - Consultar Certidões / Consultar pelo CNPJ, Exibir e Voltar', () => {
+it('28 - Consultar Certidões / Consultar pelo CNPJ, Exibir e Voltar', () => {
 
     cy.viewport(1920, 1080);
      //cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -668,7 +668,7 @@ it.skip('28 - Consultar Certidões / Consultar pelo CNPJ, Exibir e Voltar', () =
 
 })
 
- it.skip('29 - Relatório de Certidões Cíveis Emitidas / Validação de Label', () => {
+ it('29 - Relatório de Certidões Cíveis Emitidas / Validação de Label', () => {
 
     cy.viewport(1920, 1080);
      //cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -699,7 +699,7 @@ it.skip('28 - Consultar Certidões / Consultar pelo CNPJ, Exibir e Voltar', () =
     
 })
 
- it.skip('30 - Relatório de Certidões Cíveis Emitidas / Campos Obrigatórios', () => {
+ it('30 - Relatório de Certidões Cíveis Emitidas / Campos Obrigatórios', () => {
 
     cy.viewport(1920, 1080);
      //cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -722,7 +722,7 @@ it.skip('28 - Consultar Certidões / Consultar pelo CNPJ, Exibir e Voltar', () =
     
 })
 
-it.skip('31 - Relatório de Certidões Cíveis Emitidas / Pesquisa por Período', () => {
+it('31 - Relatório de Certidões Cíveis Emitidas / Pesquisa por Período', () => {
 
     cy.viewport(1920, 1080);
     // cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -742,7 +742,7 @@ it.skip('31 - Relatório de Certidões Cíveis Emitidas / Pesquisa por Período'
     
 })
 
-it.skip('32 - Relatório de Certidões Cíveis Emitidas / Pesquisa e Validar Datatable (Label)', () => {
+it('32 - Relatório de Certidões Cíveis Emitidas / Pesquisa e Validar Datatable (Label)', () => {
 
     cy.viewport(1920, 1080);
     // cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -791,7 +791,7 @@ it.skip('32 - Relatório de Certidões Cíveis Emitidas / Pesquisa e Validar Dat
     
 })
 
-it.skip('33 - Relatório de Certidões Cíveis Emitidas / Pesquisa por Período e Exportar Total', () => {
+it('33 - Relatório de Certidões Cíveis Emitidas / Pesquisa por Período e Exportar Total', () => {
 
     cy.viewport(1920, 1080);
     // cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -811,7 +811,7 @@ it.skip('33 - Relatório de Certidões Cíveis Emitidas / Pesquisa por Período 
 
 
 })
-it.skip('34 - Relatório de Certidões Cíveis Emitidas / Pesquisa por Período e Exportar Servidor', () => {
+it('34 - Relatório de Certidões Cíveis Emitidas / Pesquisa por Período e Exportar Servidor', () => {
 
     cy.viewport(1920, 1080);
     //cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')

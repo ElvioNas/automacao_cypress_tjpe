@@ -1,6 +1,6 @@
 describe('Simap | Metas', () => {
 
-   it.skip( '1 - Metas | Validar Label', () => {
+   it( '1 - Metas | Validar Label', () => {
    
    //Métricas
    
@@ -32,7 +32,7 @@ describe('Simap | Metas', () => {
    cy.get('a.underline span').should('have.text', 'Limpar Todos');
    })
 
-   it.skip( '2 - Metas | Editar Meta', () => {
+   it( '2 - Metas | Editar Meta', () => {
    
    //Métricas
    

@@ -1,6 +1,6 @@
 describe('Simap | Meus Processos', () => {
 
-   it.skip( '1 - Meus Processos | Validar Label', () => {
+   it( '1 - Meus Processos | Validar Label', () => {
    
    //Métricas
    
@@ -26,7 +26,7 @@ describe('Simap | Meus Processos', () => {
    cy.get('button.p-button-sm.p-button-rounded span.p-button-label').should('have.text', 'Pesquisar');
    })
 
-   it.skip( '2 - Meus Processos | Pesquisar', () => {
+   it( '2 - Meus Processos | Pesquisar', () => {
    
    //Métricas
    

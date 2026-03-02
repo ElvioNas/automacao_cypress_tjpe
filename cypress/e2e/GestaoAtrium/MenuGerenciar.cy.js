@@ -1,6 +1,6 @@
 describe('Sistema Atrium Gestão | Menu Gerenciar', () => {
 
-   it.skip( '1 - Histórico de Magistrado do 1º Grau | Validar Label', () => {
+   it( '1 - Histórico de Magistrado do 1º Grau | Validar Label', () => {
 
     //Histórico de Magistrado do 1º Grau
 
@@ -52,7 +52,7 @@ describe('Sistema Atrium Gestão | Menu Gerenciar', () => {
    cy.wait(5000)
    })
 
-   it.skip( '2 - Histórico de Magistrado do 2º Grau | Validar Label', () => {
+   it( '2 - Histórico de Magistrado do 2º Grau | Validar Label', () => {
    // Histórico de Magistrado do 2º Grau
    cy.viewport(1920, 1080);
    cy.visit('https://teste-atriumgestao.app.tjpe.gov.br/')
@@ -88,8 +88,7 @@ describe('Sistema Atrium Gestão | Menu Gerenciar', () => {
    })
 
     
-  it.skip( '3 - Lista de Antiguidade | Validar Label', () => {
-
+  it( '3 - Lista de Antiguidade | Validar Label', () => {
       //Lista de Antiguidade
 
    cy.viewport(1920, 1080);
@@ -116,7 +115,7 @@ describe('Sistema Atrium Gestão | Menu Gerenciar', () => {
     })
 
 
-    it.skip( '4 - Histórico de magistrado do 1º Grau | Validar Filtro' , () => {
+    it( '4 - Histórico de magistrado do 1º Grau | Validar Filtro' , () => {
 
    //Histórico de magistrado do 1 Grau validar filtro
 
@@ -154,7 +153,7 @@ describe('Sistema Atrium Gestão | Menu Gerenciar', () => {
     })
 
 
-  it.skip( '5 - Histórico de magistrado do 2 Grau | Validar Filtro' , () => {
+  it( '5 - Histórico de magistrado do 2 Grau | Validar Filtro' , () => {
 
    //Histórico de magistrado do 2 Grau validar filtro
 
@@ -203,7 +202,7 @@ describe('Sistema Atrium Gestão | Menu Gerenciar', () => {
    })
 
 
-  it.skip( '6 - Lista de Antiguidade | Validar Filtro' , () => {
+  it( '6 - Lista de Antiguidade | Validar Filtro' , () => {
 
    //Lista de Antiguidade
 
@@ -246,7 +245,7 @@ describe('Sistema Atrium Gestão | Menu Gerenciar', () => {
   })
 
 
-  it.skip( '7 - Histórico de magistrado do 1º Grau | Adicionar', () => {
+  it( '7 - Histórico de magistrado do 1º Grau | Adicionar', () => {
    // Atenção com esse cenário ele apresenta erro quando clica no botão salvar.
    //Histórico de magistrado do 1º Grau Adicionar
 
@@ -315,7 +314,7 @@ describe('Sistema Atrium Gestão | Menu Gerenciar', () => {
 
 })
 
- it.skip( '8 - Histórico de magistrado do 2º Grau | Adicionar', () => {
+ it( '8 - Histórico de magistrado do 2º Grau | Adicionar', () => {
 
 //Histórico de magistrado do 2º Grau Adicionar
     cy.viewport(1920, 1080);
@@ -356,7 +355,7 @@ describe('Sistema Atrium Gestão | Menu Gerenciar', () => {
    
  })
 
- it.skip( '9 - Lista de Antiguidade | Adicionar', () => {
+ it( '9 - Lista de Antiguidade | Adicionar', () => {
 
   
    //Lista de Antiguidade | Adicionar
@@ -386,7 +385,7 @@ describe('Sistema Atrium Gestão | Menu Gerenciar', () => {
    })
 
 
-   it.skip( '10 - Histórico de Magistrado do 1º Grau | Exportar', () => {
+   it( '10 - Histórico de Magistrado do 1º Grau | Exportar', () => {
 
   
    //Atenção com esse cenário está apresentando erro
@@ -420,7 +419,7 @@ describe('Sistema Atrium Gestão | Menu Gerenciar', () => {
 
 })
 
-   it.skip( '11 - Histórico de Magistrado do 2º Grau | Exportar', () => {
+   it( '11 - Histórico de Magistrado do 2º Grau | Exportar', () => {
 
   
    //Atenção com esse cenário está apresentando erro
@@ -444,7 +443,7 @@ describe('Sistema Atrium Gestão | Menu Gerenciar', () => {
    cy.get('.p-button-outlined.mb-4 > .p-button-label').click()
 })
 
-it.skip( '12 - Histórico de magistrado do 1º Grau | Filtro botão Limpar' , () => {
+it( '12 - Histórico de magistrado do 1º Grau | Filtro botão Limpar' , () => {
 
    //Histórico de magistrado do 1 Grau validar filtro
 
@@ -482,7 +481,7 @@ it.skip( '12 - Histórico de magistrado do 1º Grau | Filtro botão Limpar' , ()
 
     })
 
-    it.skip( '13 - Histórico de magistrado do 2 Grau | Filtro Botão Limpar' , () => {
+    it( '13 - Histórico de magistrado do 2 Grau | Filtro Botão Limpar' , () => {
 
    //Histórico de magistrado do 2 Grau validar filtro
 
@@ -532,7 +531,7 @@ it.skip( '12 - Histórico de magistrado do 1º Grau | Filtro botão Limpar' , ()
 
    })
 
-   it.skip( '14 - Lista de Antiguidade | Filtro Botão Limpar' , () => {
+   it( '14 - Lista de Antiguidade | Filtro Botão Limpar' , () => {
 
    //Lista de Antiguidade
 

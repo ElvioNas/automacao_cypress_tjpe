@@ -1,6 +1,6 @@
 describe('Sistema Simap |  Acompanhamento do Gestor', () => {
 
-   it.skip( '1 - Acompanhamento do Gestor | Validar Label', () => {
+   it( '1 - Acompanhamento do Gestor | Validar Label', () => {
    
    //Métricas
    
@@ -31,7 +31,7 @@ describe('Sistema Simap |  Acompanhamento do Gestor', () => {
    cy.get('button.p-button-sm.p-button-rounded span.p-button-label').should('have.text', 'Pesquisar');
    })
 
-    it.skip( '2 - Acompanhamento do Gestor | Pesquisar', () => {
+    it( '2 - Acompanhamento do Gestor | Pesquisar', () => {
    
    //Métricas
    
