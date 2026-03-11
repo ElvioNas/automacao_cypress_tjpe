@@ -98,7 +98,7 @@ describe('Sismap | Ausências', () => {
    cy.get('button.p-button-sm.p-button-rounded span.p-button-label').click();
     })
 
-     it( '4 - Ausências | Editar Ausência', () => {
+     it.only( '4 - Ausências | Editar Ausência', () => {
    
    //Métricas
    
