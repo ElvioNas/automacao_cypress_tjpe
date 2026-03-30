@@ -59,6 +59,7 @@ cy.get('small.p-error').should('have.text', ' CPF inválido. ');
 
   it('3 - Consultar Pendências Pessoa Física / Pesquisar Homônimo por CPF', () => {
 
+
    cy.viewport(1920, 1080);
     // cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
     //cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/') 

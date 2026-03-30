@@ -1,6 +1,6 @@
 describe('LegJud | Menu Prcessos de 1º Grau', () => {
 
-   it.only( '1 - Consultar Processos de 1º Grau | Validar Label', () => {
+   it( '1 - Consultar Processos de 1º Grau | Validar Label', () => {
     
     //Comarca
     
