@@ -41,6 +41,7 @@ describe('Certidões Negativas Cíveis 1º Grau', () => {
     cy.get('#main-content div.grid').click();
     cy.get('#main-content div:nth-child(6)').click();
     cy.get('#main-content span.ml-auto').should('have.text', '\n                (opcional)\n              ');
+    //principais pensadores
   })
   
 
