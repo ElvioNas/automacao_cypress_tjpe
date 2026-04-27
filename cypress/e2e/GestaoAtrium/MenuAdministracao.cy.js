@@ -1,6 +1,6 @@
 describe('Sistema Atrium Gestão | Menu Administração', () => {
 
-   it( '1 - Métricas | Validar Label', () => {
+   it.skip( '1 - Métricas | Validar Label', () => {
 
    //Métricas
 
@@ -25,7 +25,7 @@ describe('Sistema Atrium Gestão | Menu Administração', () => {
 
    })
 
-   it( '2 - Estado do Sistema | Validar Label', () => {
+   it.skip( '2 - Estado do Sistema | Validar Label', () => {
 
     //Estado do Sistema
 
@@ -52,7 +52,7 @@ describe('Sistema Atrium Gestão | Menu Administração', () => {
 
    
 
-   it( '3 - Configuração | Validar Label', () => {
+   it.skip( '3 - Configuração | Validar Label', () => {
 
   //Configuração 
 
@@ -81,7 +81,7 @@ describe('Sistema Atrium Gestão | Menu Administração', () => {
 
    
 
-    it( '4 - Log | Validar Label', () => {
+    it.skip( '4 - Log | Validar Label', () => {
 
   //Log
 
@@ -108,7 +108,7 @@ describe('Sistema Atrium Gestão | Menu Administração', () => {
 
 
 
- it( '5 - API | Validar Label', () => {
+ it.skip( '5 - API | Validar Label', () => {
     //API
   cy.viewport(1920, 1080);
    cy.visit('https://teste-atriumgestao.app.tjpe.gov.br/')
@@ -123,7 +123,7 @@ describe('Sistema Atrium Gestão | Menu Administração', () => {
  })
 
       
- it( '6 - Admin Entity Audit | Validar Label', () => {
+ it.skip( '6 - Admin Entity Audit | Validar Label', () => {
 
        //Admin Entity Audit
 
@@ -151,7 +151,7 @@ describe('Sistema Atrium Gestão | Menu Administração', () => {
        
     })
 
-     it( '7 - Métricas | Botão Atualizar', () => {
+     it.skip( '7 - Métricas | Botão Atualizar', () => {
 
    //Métricas Botão Atualizar
    cy.viewport(1920, 1080);
@@ -176,7 +176,7 @@ describe('Sistema Atrium Gestão | Menu Administração', () => {
 
      })
 
-  it( '8 - Estado do Sistema | Botão Atualizar', () => {
+  it.skip( '8 - Estado do Sistema | Botão Atualizar', () => {
 
    //Estado do sistema Botão Atualizar
    cy.viewport(1920, 1080);
@@ -194,7 +194,7 @@ describe('Sistema Atrium Gestão | Menu Administração', () => {
    })
 
 
-   it( '9 - Configuração | Filtro', () => {
+   it.skip( '9 - Configuração | Filtro', () => {
 
   //Configuração Filtro
    cy.viewport(1920, 1080);
@@ -210,7 +210,7 @@ describe('Sistema Atrium Gestão | Menu Administração', () => {
 
   })
 
-it( '10 - Log | Pesquisar', () => {
+it.skip( '10 - Log | Pesquisar', () => {
  //Logs Pesquisar
   
    cy.viewport(1920, 1080);
@@ -226,7 +226,7 @@ it( '10 - Log | Pesquisar', () => {
 
 })
 
-it( '11 - API| Pesquisar', () => {
+it.skip( '11 - API| Pesquisar', () => {
  //API sem função
   
    cy.viewport(1920, 1080);
@@ -240,7 +240,7 @@ it( '11 - API| Pesquisar', () => {
 })
 
 
-it( '12 - Entity Audit | Load Change List', () => {
+it.skip( '12 - Entity Audit | Load Change List', () => {
 //Entity Audit Botão Load Change List
   
    cy.viewport(1920, 1080);

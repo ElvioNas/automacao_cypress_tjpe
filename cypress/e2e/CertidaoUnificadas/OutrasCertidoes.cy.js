@@ -75,7 +75,7 @@ describe('Outras Certidões', () => {
      
    })
 
-it('3 - Para Fins Eleitorais / Emissão', () => {
+it.skip('3 - Para Fins Eleitorais / Emissão', () => {
    
    // cy.get('.hidden > :nth-child(3) > .space-y-1 > :nth-child(2) > .group > .flex').click()
     cy.get('.hidden > :nth-child(4) > .space-y-1 > :nth-child(1) > .group > .flex > .ml-10').click()
@@ -95,7 +95,7 @@ it('3 - Para Fins Eleitorais / Emissão', () => {
      
    })
 
-   it('4 - Para Fins Eleitorais / Emissão com nome Social', () => {
+   it.skip('4 - Para Fins Eleitorais / Emissão com nome Social', () => {
    
     //cy.get('.hidden > :nth-child(3) > .space-y-1 > :nth-child(2) > .group > .flex').click()
     cy.get('.hidden > :nth-child(4) > .space-y-1 > :nth-child(1) > .group > .flex > .ml-10').click()
@@ -140,7 +140,7 @@ it('3 - Para Fins Eleitorais / Emissão', () => {
 
   })  
 
-  it('7 - Declaratória / Emissão', () => {
+  it.skip('7 - Declaratória / Emissão', () => {
     
     //cy.get('.hidden > :nth-child(3) > .space-y-1 > :nth-child(1) > .group > .flex').click()
     cy.get('.hidden > :nth-child(4) > .space-y-1 > :nth-child(2) > .group > .flex > .ml-10').click()

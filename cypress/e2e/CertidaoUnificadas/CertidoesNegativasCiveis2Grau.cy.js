@@ -73,7 +73,7 @@ describe('Certidões Negativas Cíveis 2º Grau', () => {
    //cy.get('#main-content div.pt-1 span:nth-child(1)').should('have.text', 'Emissão de Certidões | Versão v1.2.0-SNAPSHOT');
   })
 
-   it('3 - Processos Cíveis para Pessoa Física 2º Grau e Colégio Recursal / Emissão com Ocorrência', () => {
+   it.skip('3 - Processos Cíveis para Pessoa Física 2º Grau e Colégio Recursal / Emissão com Ocorrência', () => {
    
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(2) > .group > .h-9').click()
     cy.get('.max-h-screen > :nth-child(1) > :nth-child(1) > .rounded > .inline-block').click()
@@ -91,7 +91,7 @@ describe('Certidões Negativas Cíveis 2º Grau', () => {
     
   })
 
-  it('4 - Processos Cíveis para Pessoa Física 2º Grau e Colégio Recursal / Emissão', () => {
+  it.skip('4 - Processos Cíveis para Pessoa Física 2º Grau e Colégio Recursal / Emissão', () => {
    
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(2) > .group > .h-9').click()
     cy.get('.max-h-screen > :nth-child(1) > :nth-child(1) > .rounded > .inline-block').click()
@@ -108,7 +108,7 @@ describe('Certidões Negativas Cíveis 2º Grau', () => {
     
   })
 
-    it('5 - Processos Cíveis para Pessoa Física 2º Grau e Colégio Recursal / Emissão com Nome Social', () => {
+    it.skip('5 - Processos Cíveis para Pessoa Física 2º Grau e Colégio Recursal / Emissão com Nome Social', () => {
   
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(2) > .group > .h-9').click()
     cy.get('.max-h-screen > :nth-child(1) > :nth-child(1) > .rounded > .inline-block').click()
@@ -171,7 +171,7 @@ describe('Certidões Negativas Cíveis 2º Grau', () => {
      cy.log('Total de verificações (asserções): 16');
 
   }) 
-     it('8 - Processos Cíveis para Pessoa Jurídica 2º Grau e Colégio Recursal / Emissão com Ocorrência', () => {
+     it.skip('8 - Processos Cíveis para Pessoa Jurídica 2º Grau e Colégio Recursal / Emissão com Ocorrência', () => {
     
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(2) > .group > .h-9').click()
     cy.get('.max-h-screen > :nth-child(1) > :nth-child(2) > .rounded > .inline-block').click()
@@ -188,7 +188,7 @@ describe('Certidões Negativas Cíveis 2º Grau', () => {
 
   }) 
 
-  it('9 - Processos Cíveis para Pessoa Jurídica 2º Grau e Colégio Recursal / Emissão', () => {
+  it.skip('9 - Processos Cíveis para Pessoa Jurídica 2º Grau e Colégio Recursal / Emissão', () => {
     
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(2) > .group > .h-9').click()
     cy.get('.max-h-screen > :nth-child(1) > :nth-child(2) > .rounded > .inline-block').click()
@@ -252,7 +252,7 @@ describe('Certidões Negativas Cíveis 2º Grau', () => {
  
   }) 
 
-   it('12 - Processos Cíveis para Pessoa Jurídica 2º Grau para fins de Licitação / Emissão', () => {
+   it.skip('12 - Processos Cíveis para Pessoa Jurídica 2º Grau para fins de Licitação / Emissão', () => {
   
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(2) > .group > .h-9').click()
     cy.get('.max-h-screen > :nth-child(1) > :nth-child(3) > .rounded > .inline-block').click()

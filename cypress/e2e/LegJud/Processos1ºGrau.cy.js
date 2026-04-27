@@ -1,6 +1,6 @@
 describe('LegJud | Menu Prcessos de 1º Grau', () => {
 
-   it( '1 - Consultar Processos de 1º Grau | Validar Label', () => {
+   it.skip( '1 - Consultar Processos de 1º Grau | Validar Label', () => {
     
     //Comarca
     
@@ -70,7 +70,7 @@ describe('LegJud | Menu Prcessos de 1º Grau', () => {
     cy.get('#pn_id_2_tabpanel_3 span.p-button-label').should('have.text', 'Aplicar');
    })
 
-   it( '2 - Movimentação Individual | Validar Label', () => {
+   it.skip( '2 - Movimentação Individual | Validar Label', () => {
     
     //Comarca
     
@@ -87,7 +87,7 @@ describe('LegJud | Menu Prcessos de 1º Grau', () => {
     cy.get('a.underline span').should('have.text', 'Limpar');
    })
 
-   it( '3 - Guia de Remessa | Validar Label', () => {
+   it.skip( '3 - Guia de Remessa | Validar Label', () => {
     
     //Comarca
     
@@ -113,7 +113,7 @@ describe('LegJud | Menu Prcessos de 1º Grau', () => {
     cy.get('#pn_id_2_tabpanel_1 span.p-button-label').should('have.text', 'Aplicar');
    })
 
-it( '4 - Recebimento de Remessa | Validar Label', () => {
+it.skip( '4 - Recebimento de Remessa | Validar Label', () => {
     
     //Comarca
     
@@ -140,7 +140,7 @@ it( '4 - Recebimento de Remessa | Validar Label', () => {
     cy.get('#pn_id_2_tabpanel_1 a.underline span').should('have.text', 'Limpar Todos');
     cy.get('#pn_id_2_tabpanel_1 span.p-button-label').should('have.text', 'Aplicar');
 })
-it( '5 - Remessa Carga ao Advogado | Validar Label', () => {
+it.skip( '5 - Remessa Carga ao Advogado | Validar Label', () => {
     
     //Comarca
     

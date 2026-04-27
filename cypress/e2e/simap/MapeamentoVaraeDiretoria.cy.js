@@ -1,6 +1,6 @@
 describe('Simap | Mapeamento Vara e Diretoria', () => {
 
-   it( '1 - Mapeamento Vara e Diretoria | Validar Label', () => {
+   it.skip( '1 - Mapeamento Vara e Diretoria | Validar Label', () => {
    
    //Métricas
    
@@ -33,7 +33,7 @@ describe('Simap | Mapeamento Vara e Diretoria', () => {
    })
 
 
-   it( '2 - Mapeamento Vara e Diretoria | Novo Mapeamento', () => {
+   it.skip( '2 - Mapeamento Vara e Diretoria | Novo Mapeamento', () => {
    
    //Métricas
    

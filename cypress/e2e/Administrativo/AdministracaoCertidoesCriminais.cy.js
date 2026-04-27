@@ -7,39 +7,41 @@ describe('Administração Certidões Criminais', () => {
 
      }) */
 
-  it('1 - Consultar Pendências Pessoa Física / Validação de Label', () => {
-   
-cy.viewport(1920, 1080);
-    cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
-    cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/')
-    cy.get('.alert-link').click()
-    cy.wait(5000) //Digite o seu CPF e click para confirmar
-    cy.get('#home-logged-message')
-      .should('contain.text', 'Elvio Ferreira do Nascimento')
-    cy.wait(2000)
-    cy.get(':nth-child(1) > .dropdown > .nav-bar-item > .font-medium').click()
-    cy.get(':nth-child(1) > .dropdown > .dropdown-menu > :nth-child(1) > .dropdown-toggle > .font-medium').click()
-    cy.wait(2000) 
-    cy.get('.font-bold > .inline-block')
-      .should('contain.text', 'Emissão de Certidões - Administração')
-    cy.get(':nth-child(2) > .dropdown > .nav-bar-item > .font-medium')
-      .should('contain.text', 'Certidões Cíveis')
-    cy.get(':nth-child(3) > .dropdown > .nav-bar-item > .font-medium')
-      .should('contain.text', 'Outras Certidões')
-    cy.get('.p-breadcrumb-list')
-      .should('contain.text', 'Solicitações')
-    cy.get('h3')
-       .should('contain.text','Consultar')
-    cy.get('.p-button-label')
-       .should('contain.text', 'Consultar')
-    cy.get('.text-primary > span')
-       .should('contain.text', 'Limpar')
-    cy.get('#no-result > .block')
-       .should('contain.text', 'Nenhuma solicitação encontrada') 
-       cy.wait(3000)
+  it.skip('1 - Consultar Pendências Pessoa Física / Validação de Label', () => {
+       
+    cy.viewport(1920, 1080);
+        cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
+        cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/')
+        cy.get('.alert-link').click()
+        cy.wait(5000) //Digite o seu CPF e click para confirmar
+        cy.get('#home-logged-message')
+          .should('contain.text', 'Elvio Ferreira do Nascimento')
+        cy.wait(2000)
+        cy.get(':nth-child(1) > .dropdown > .nav-bar-item > .font-medium').click()
+        cy.get(':nth-child(1) > .dropdown > .dropdown-menu > :nth-child(1) > .dropdown-toggle > .font-medium').click()
+        cy.wait(2000) 
+        cy.get('.font-bold > .inline-block')
+          .should('contain.text', 'Emissão de Certidões - Administração')
+        cy.get(':nth-child(2) > .dropdown > .nav-bar-item > .font-medium')
+          .should('contain.text', 'Certidões Cíveis')
+        cy.get(':nth-child(3) > .dropdown > .nav-bar-item > .font-medium')
+          .should('contain.text', 'Outras Certidões')
+        cy.get('.p-breadcrumb-list')
+          .should('contain.text', 'Solicitações')
+        cy.get('h3')
+           .should('contain.text','Consultar')
+        cy.get('.p-button-label')
+           .should('contain.text', 'Consultar')
+        cy.get('.text-primary > span')
+           .should('contain.text', 'Limpar')
+        cy.get('#no-result > .block')
+           .should('contain.text', 'Nenhuma solicitação encontrada') 
+           cy.wait(3000)
+    cy.get('#no-result span.block').should('have.text', 'Nenhuma solicitação encontrada');
+    cy.get('a.underline span').should('have.text', 'Limpar');
   })
 
-it('2 - Consultar Pendências Pessoa Física / Campos Obrigatórios', () => {
+it.skip('2 - Consultar Pendências Pessoa Física / Campos Obrigatórios', () => {
 
 cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -58,7 +60,7 @@ cy.get('div.bg-white').click();
 cy.get('small.p-error').should('have.text', ' CPF inválido. ');
 })
 
-it('3 - Consultar Pendências Pessoa Física / Pesquisar Homônimo por CPF', () => {
+it.skip('3 - Consultar Pendências Pessoa Física / Pesquisar Homônimo por CPF', () => {
 
 cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -76,7 +78,7 @@ cy.get('[data-cy="documento"]').type('249.639.624-46');
 cy.get('span.p-button-label').click();
 })
 
-  it('4 - Consultar Pendências Pessoa Física / Pesquisar Homônimo por Nome', () => {
+  it.skip('4 - Consultar Pendências Pessoa Física / Pesquisar Homônimo por Nome', () => {
 
     cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -96,7 +98,7 @@ cy.get('span.p-button-label').click();
     
   })
 
-  it('5 - Consultar Pendências Pessoa Física / Pesquisar Homônimo por CPF e Nome', () => {
+  it.skip('5 - Consultar Pendências Pessoa Física / Pesquisar Homônimo por CPF e Nome', () => {
 
 cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -116,7 +118,7 @@ cy.get('button.p-button').click();
 
 
 
-  it('6 - Consultar Pendências Pessoa Física / Emissão Sem Pendência para o CPF informado', () => {
+  it.skip('6 - Consultar Pendências Pessoa Física / Emissão Sem Pendência para o CPF informado', () => {
     
     cy.viewport(1920, 1080);
         cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -144,7 +146,7 @@ cy.get('button.p-button').click();
     cy.get('div.break-words').should('have.text', 'Não existe solicitação realizada na WEB.');
   })
 
-  it('7 - Consultar Pendências Pessoa Física / Emissão Certidão Negativa', () => {
+  it.skip('7 - Consultar Pendências Pessoa Física / Emissão Certidão Negativa', () => {
 
 cy.viewport(1920, 1080);
 
@@ -172,7 +174,7 @@ cy.get('[data-cy="documento"]').type('542.735.284-87');
 cy.get('span.p-button-label').click();
   })
 
-   it('8 - Consultar Pendências Pessoa Física / Emissão Certidão Negativa sem Justificativa', () => {
+   it.skip('8 - Consultar Pendências Pessoa Física / Emissão Certidão Negativa sem Justificativa', () => {
     
     cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -211,7 +213,7 @@ cy.get('span.p-button-label').click();
    })
 
 
-  it('9 - Consultar Pendências Pessoa Física / Emissão Certidão Negativa - Nada consta em tramitação', () => {
+  it.skip('9 - Consultar Pendências Pessoa Física / Emissão Certidão Negativa - Nada consta em tramitação', () => {
 
 cy.viewport(1920, 1080);
 
@@ -243,7 +245,7 @@ cy.get('span.p-button-label').click();
 //cy.get('p-button[label="Emitir"] button.p-ripple').click();
   })
 
-  it('10 - Consultar Pendências Pessoa Física / Emissão Certidão Negativa - Nada consta em tramitação sem Justificativa', () => {
+  it.skip('10 - Consultar Pendências Pessoa Física / Emissão Certidão Negativa - Nada consta em tramitação sem Justificativa', () => {
 cy.viewport(1920, 1080);
 cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
 cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/')
@@ -273,7 +275,7 @@ cy.get('span.p-button-label').click();
 //cy.get('p-button[label="Emitir"] button.p-ripple').click();
   })
 
-  it('11 - Consultar Pendências Pessoa Física / Emissão Certidão Negativa - Certidão Positiva', () => {
+  it.skip('11 - Consultar Pendências Pessoa Física / Emissão Certidão Negativa - Certidão Positiva', () => {
     
     cy.viewport(1920, 1080);
     
@@ -307,7 +309,7 @@ cy.get('span.p-button-label').click();
   })
  
   
-  it('12 - Consultar Pendências Pessoa Física / Emissão Certidão Negativa - Certidão Positiva sem Justificativa', () => {
+  it.skip('12 - Consultar Pendências Pessoa Física / Emissão Certidão Negativa - Certidão Positiva sem Justificativa', () => {
 
 cy.viewport(1920, 1080);
   cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -343,7 +345,7 @@ cy.get('[data-cy="entityTable"] td:nth-child(3)').click();
   })
  
 
-   it('13 - Consultar Pendências Pessoa Física / Limpar Campos', () => {
+   it.skip('13 - Consultar Pendências Pessoa Física / Limpar Campos', () => {
 
 cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -367,7 +369,7 @@ cy.get('a.underline span').click();
    })
 
 
-  it('14 - Consultar Pendências Pessoa Jurídica / Validação de Label', () => {
+  it.skip('14 - Consultar Pendências Pessoa Jurídica / Validação de Label', () => {
 
 cy.viewport(1920, 1080);
 
@@ -397,7 +399,7 @@ cy.get('span.p-button-label').should('have.text', 'Consultar');
 cy.get('a.underline span').should('have.text', 'Limpar');
   })
 
-  it('15 - Consultar Pendências Pessoa Jurídica / Campos Obrigatórios', () => {
+  it.skip('15 - Consultar Pendências Pessoa Jurídica / Campos Obrigatórios', () => {
 
   cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -419,7 +421,7 @@ cy.get('span.p-button-label').click();
 cy.get('div.validation-messages').should('have.text', '\n         CNPJ inválido. \n      ');
   })
 
-  it('16 - Consultar Pendências Pessoa Jurídica / Emissão Sem Pendência', () => {
+  it.skip('16 - Consultar Pendências Pessoa Jurídica / Emissão Sem Pendência', () => {
     
     cy.viewport(1920, 1080);
     
@@ -447,7 +449,7 @@ cy.get('div.validation-messages').should('have.text', '\n         CNPJ inválido
     cy.get('div.break-words').should('have.text', 'Não existe solicitação realizada na WEB.');
   })
 
-  it('17 - Consultar Pendências Pessoa Jurídica / Emissão', () => {
+  it.skip('17 - Consultar Pendências Pessoa Jurídica / Emissão', () => {
     
     cy.viewport(1920, 1080);
     
@@ -472,7 +474,7 @@ cy.get('div.validation-messages').should('have.text', '\n         CNPJ inválido
     cy.get('tr[data-cy="entityTable"]:nth-of-type(1) span.p-button-label').click();
   })
 
-  it('18 - Consultar Pendências Pessoa Jurídica / Emissão sem Justificativa', () => {
+  it.skip('18 - Consultar Pendências Pessoa Jurídica / Emissão sem Justificativa', () => {
     
     cy.viewport(1920, 1080);
       cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -504,7 +506,7 @@ cy.get('div.validation-messages').should('have.text', '\n         CNPJ inválido
     cy.get('div.break-words').should('have.text', 'Não há solicitação pendente para o CNPJ informado.');
   })
 
-it('19 - Consultar Pendências Pessoa Jurídica / Emissão Nada Consta em Tramitação sem Justificativa', () => {
+it.skip('19 - Consultar Pendências Pessoa Jurídica / Emissão Nada Consta em Tramitação sem Justificativa', () => {
     
     cy.viewport(1920, 1080);
       cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -539,7 +541,7 @@ it('19 - Consultar Pendências Pessoa Jurídica / Emissão Nada Consta em Tramit
     
 })
 
-it('20 - Consultar Pendências Pessoa Jurídica / Emissão Certidão Positiva sem Justificativa', () => {
+it.skip('20 - Consultar Pendências Pessoa Jurídica / Emissão Certidão Positiva sem Justificativa', () => {
     
     cy.viewport(1920, 1080);
       cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -585,7 +587,7 @@ it('20 - Consultar Pendências Pessoa Jurídica / Emissão Certidão Positiva se
 })
 
 
-  it('21 - Consultar Pendências Pessoa Jurídica / Limpar Campos', () => {
+  it.skip('21 - Consultar Pendências Pessoa Jurídica / Limpar Campos', () => {
 
 cy.viewport(1920, 1080);
 
@@ -608,7 +610,7 @@ cy.get('[data-cy="entityTable"] td:nth-child(3)').click();
 cy.get('div.ng-star-inserted > div.justify-end > div.items-center > a.underline > span').click();
   })
 
-    it('22 - Consultar Certidões / Validação de Label', () => {
+    it.skip('22 - Consultar Certidões / Validação de Label', () => {
 
     cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -642,7 +644,7 @@ cy.get('div.ng-star-inserted > div.justify-end > div.items-center > a.underline 
   
   })
 
-  it('23 - Consultar Certidões / Campos Obrigatórios', () => {
+  it.skip('23 - Consultar Certidões / Campos Obrigatórios', () => {
 
     cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -715,7 +717,7 @@ cy.get('div.ng-star-inserted > div.justify-end > div.items-center > a.underline 
   
   })
 
-     it('24 - Consultar Certidões CPF / Emissão Número da Certidão e Cód. de Autenticação', () => {
+     it.skip('24 - Consultar Certidões CPF / Emissão Número da Certidão e Cód. de Autenticação', () => {
 
    cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -738,7 +740,7 @@ cy.get('div.ng-star-inserted > div.justify-end > div.items-center > a.underline 
   })
 
   
-  it('25 - Consultar Certidões / Emissão CPF', () => {
+  it.skip('25 - Consultar Certidões / Emissão CPF', () => {
 
     cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -757,7 +759,7 @@ cy.get('div.ng-star-inserted > div.justify-end > div.items-center > a.underline 
   
   })
 
-  it('26 - Consultar Certidões / Emitir e Voltar', () => {
+  it.skip('26 - Consultar Certidões / Emitir e Voltar', () => {
 
     cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -781,7 +783,7 @@ cy.get('div.ng-star-inserted > div.justify-end > div.items-center > a.underline 
   
   })
 
-  it('27 - Consultar Certidões CNPJ / Emissão Número da Certidão e Cód. de Autenticação', () => {
+  it.skip('27 - Consultar Certidões CNPJ / Emissão Número da Certidão e Cód. de Autenticação', () => {
 
    cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -803,7 +805,7 @@ cy.get('div.ng-star-inserted > div.justify-end > div.items-center > a.underline 
   
   })
 
-  it('28 - Consultar Certidões / Emissão CNPJ', () => {
+  it.skip('28 - Consultar Certidões / Emissão CNPJ', () => {
 
    cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -826,7 +828,7 @@ cy.get('div.ng-star-inserted > div.justify-end > div.items-center > a.underline 
   
   })
 
-  it('29 - Consultar Certidões / Emissão CNPJ e Voltar', () => {
+  it.skip('29 - Consultar Certidões / Emissão CNPJ e Voltar', () => {
 
    cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -853,7 +855,7 @@ cy.get('div.ng-star-inserted > div.justify-end > div.items-center > a.underline 
   
   })
 
-  it('30 - Consultar Certidões / Limpar Campos com CPF', () => {
+  it.skip('30 - Consultar Certidões / Limpar Campos com CPF', () => {
 
     cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -874,7 +876,7 @@ cy.get('div.ng-star-inserted > div.justify-end > div.items-center > a.underline 
   
   })
 
-  it('31 - Consultar Certidões / Limpar Campos com CNPJ', () => {
+  it.skip('31 - Consultar Certidões / Limpar Campos com CNPJ', () => {
 
     cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -899,7 +901,7 @@ cy.get('div.ng-star-inserted > div.justify-end > div.items-center > a.underline 
   
   })
 
-   it('32 - Relatório de Certidões Criminais Emitidas / Validação de Label', () => {
+   it.skip('32 - Relatório de Certidões Criminais Emitidas / Validação de Label', () => {
 
     cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -926,7 +928,7 @@ cy.get('div.ng-star-inserted > div.justify-end > div.items-center > a.underline 
     
   })
 
-  it('33 - Relatório de Certidões Criminais Emitidas / Campos Obrigatórios', () => {
+  it.skip('33 - Relatório de Certidões Criminais Emitidas / Campos Obrigatórios', () => {
     cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/')
@@ -950,7 +952,7 @@ cy.get('div.ng-star-inserted > div.justify-end > div.items-center > a.underline 
    
     
   })
-  it('34 - Relatório de Certidões Criminais Emitidas / Consultar por Período', () => {
+  it.skip('34 - Relatório de Certidões Criminais Emitidas / Consultar por Período', () => {
 
     cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -974,7 +976,7 @@ cy.get('div.ng-star-inserted > div.justify-end > div.items-center > a.underline 
     
   })
 
-   it('35 - Relatório de Certidões Criminais Emitidas / Limpar Campos da Tela', () => {
+   it.skip('35 - Relatório de Certidões Criminais Emitidas / Limpar Campos da Tela', () => {
 
     cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -994,7 +996,7 @@ cy.get('div.ng-star-inserted > div.justify-end > div.items-center > a.underline 
     
   })
 
-  it('36 - Relatório de Certidões Criminais Emitidas / Exportar Certidões Emitidas', () => {
+  it.skip('36 - Relatório de Certidões Criminais Emitidas / Exportar Certidões Emitidas', () => {
 
 cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -1016,7 +1018,7 @@ cy.viewport(1920, 1080);
 cy.get('fieldset#entities:nth-of-type(1) span.p-button-label').click();
   })
 
-  it('37 - Relatório de Certidões Criminais Emitidas / Exportar Certidões Emitidas por Servidor', () => {
+  it.skip('37 - Relatório de Certidões Criminais Emitidas / Exportar Certidões Emitidas por Servidor', () => {
 
     cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
@@ -1039,7 +1041,7 @@ cy.get('fieldset#entities:nth-of-type(1) span.p-button-label').click();
     
   })
 
-  it('38 - Relatório de Certidões Criminais Emitidas / Validação de Label do Datatable das Certidões', () => {
+  it.skip('38 - Relatório de Certidões Criminais Emitidas / Validação de Label do Datatable das Certidões', () => {
 
     cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')

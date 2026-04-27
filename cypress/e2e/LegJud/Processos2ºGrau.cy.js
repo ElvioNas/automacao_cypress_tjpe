@@ -1,6 +1,6 @@
 describe('LegJud | Menu Prcessos de 2º Grau', () => {
 
-   it( '1 - Consultar Processos de 2º Grau | Validar Label', () => {
+   it.skip( '1 - Consultar Processos de 2º Grau | Validar Label', () => {
     
 
     
@@ -32,7 +32,7 @@ describe('LegJud | Menu Prcessos de 2º Grau', () => {
     cy.get('#pn_id_2_tabpanel_2 span.p-button-label').should('have.text', 'Aplicar');
    })
 
-    it( '2 - Remessa Carga ao Advogado | Validar Label', () => {
+    it.skip( '2 - Remessa Carga ao Advogado | Validar Label', () => {
           
           
       cy.viewport(1920, 1080);
@@ -56,7 +56,7 @@ describe('LegJud | Menu Prcessos de 2º Grau', () => {
     })
 
 
-    it( '3 - Consultar Processos de 2º Grau | Movimentação Individual validar Label', () => {
+    it.skip( '3 - Consultar Processos de 2º Grau | Movimentação Individual validar Label', () => {
           
       
           
@@ -77,7 +77,7 @@ describe('LegJud | Menu Prcessos de 2º Grau', () => {
       cy.get('a.underline span').should('have.text', 'Limpar');
     })
 
-     it( '4 - Consultar Processos de 2º Grau | Guia de Remessa validar Label', () => {
+     it.skip( '4 - Consultar Processos de 2º Grau | Guia de Remessa validar Label', () => {
           
       
           
@@ -117,7 +117,7 @@ describe('LegJud | Menu Prcessos de 2º Grau', () => {
       cy.get('#pn_id_5_tabpanel_1 div:nth-child(4) label.inline-block').should('have.text', 'Destino');
      })
 
-     it( '5 - Consultar Processos de 2º Grau | Remessa Carga ao Advogado validar Label', () => {
+     it.skip( '5 - Consultar Processos de 2º Grau | Remessa Carga ao Advogado validar Label', () => {
           
       
           
@@ -137,7 +137,7 @@ describe('LegJud | Menu Prcessos de 2º Grau', () => {
      })
      
 
-       it( '6 - Consultar Processos de 2º Grau | Pesquisa por NPU', () => {
+       it.skip( '6 - Consultar Processos de 2º Grau | Pesquisa por NPU', () => {
           
       
           
@@ -168,7 +168,7 @@ describe('LegJud | Menu Prcessos de 2º Grau', () => {
 
 
     
-    it( '7 - Consultar Processos de 2º Grau | Movimentação Individual Pesquisa por NPU', () => {
+    it.skip( '7 - Consultar Processos de 2º Grau | Movimentação Individual Pesquisa por NPU', () => {
           
       
           

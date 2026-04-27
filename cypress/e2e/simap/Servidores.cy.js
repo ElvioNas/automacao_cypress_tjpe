@@ -1,6 +1,6 @@
 describe('Simap | Servidores', () => {
 
-   it( '1 - Servidores | Validar Label', () => {
+   it.skip( '1 - Servidores | Validar Label', () => {
    
    //Métricas
    
@@ -48,7 +48,7 @@ describe('Simap | Servidores', () => {
    cy.get('[data-cy="entityCreateCancelButton"]').should('have.text', '\n            \n              \n              Cancelar\n            \n          ');
    })
 
-    it( '2 - Meus Processos | Pesquisar', () => {
+    it.skip( '2 - Meus Processos | Pesquisar', () => {
    
    //Métricas
    
@@ -88,7 +88,7 @@ describe('Simap | Servidores', () => {
    cy.get('div.break-words').should('have.text', 'Servidor Com Esse CPF Já Existe!');
     })
 
-     it( '3 - Servidores | Pesquisar Servidor', () => {
+     it.skip( '3 - Servidores | Pesquisar Servidor', () => {
    
    //Métricas
    

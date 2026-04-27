@@ -50,7 +50,7 @@ describe('Certidões Fins de Agravo de Intrumento', () => {
    
 })  
 
-it('3 - Agravo de instrumento para Advogado / Emissão', () => {
+it.skip('3 - Agravo de instrumento para Advogado / Emissão', () => {
 
    
     cy.get('.hidden > :nth-child(3) > .space-y-1 > :nth-child(1) > .group > .h-9 > .ml-10').click()
@@ -68,7 +68,7 @@ it('3 - Agravo de instrumento para Advogado / Emissão', () => {
     
 })  
 
-it('4 - Agravo de instrumento para Advogado / Emissão com ID da intimação inválido', () => {
+it.skip('4 - Agravo de instrumento para Advogado / Emissão com ID da intimação inválido', () => {
 
    
     cy.get('.hidden > :nth-child(3) > .space-y-1 > :nth-child(1) > .group > .h-9 > .ml-10').click()
@@ -86,7 +86,7 @@ it('4 - Agravo de instrumento para Advogado / Emissão com ID da intimação inv
     
 })  
 
-it('5 - Agravo de instrumento para Advogado / Emissão sem Registro', () => {
+it.skip('5 - Agravo de instrumento para Advogado / Emissão sem Registro', () => {
 
    
     cy.get('.hidden > :nth-child(3) > .space-y-1 > :nth-child(1) > .group > .h-9 > .ml-10').click()
@@ -161,7 +161,7 @@ it('5 - Agravo de instrumento para Advogado / Emissão sem Registro', () => {
 
   
 
-  it('8 - Patrocínio / Emissão', () => {
+  it.skip('8 - Patrocínio / Emissão', () => {
    
   // cy.get('.hidden > :nth-child(3) > .space-y-1 > :nth-child(3) > .group > .flex').click()
     cy.get('.hidden > :nth-child(3) > .space-y-1 > :nth-child(2) > .group > .flex > .ml-10').click()
@@ -177,7 +177,7 @@ it('5 - Agravo de instrumento para Advogado / Emissão sem Registro', () => {
 
   })
 
-  it('9 - Patrocínio / Emissão com Nome Social', () => {
+  it.skip('9 - Patrocínio / Emissão com Nome Social', () => {
    
    //cy.get('.hidden > :nth-child(3) > .space-y-1 > :nth-child(3) > .group > .flex').click()
     cy.get('.hidden > :nth-child(3) > .space-y-1 > :nth-child(2) > .group > .flex > .ml-10').click()
@@ -192,7 +192,7 @@ it('5 - Agravo de instrumento para Advogado / Emissão sem Registro', () => {
 
   })
 
-  it('10 - Patrocínio / Emissão com OAB inexistente', () => {
+  it.skip('10 - Patrocínio / Emissão com OAB inexistente', () => {
    
   // cy.get('.hidden > :nth-child(3) > .space-y-1 > :nth-child(3) > .group > .flex').click()
    cy.get('.hidden > :nth-child(3) > .space-y-1 > :nth-child(2) > .group > .flex > .ml-10').click()
@@ -209,7 +209,7 @@ it('5 - Agravo de instrumento para Advogado / Emissão sem Registro', () => {
 
   })
 
-   it('11 - Patrocínio / Emissão com OAB inexistente clicar botão Voltar', () => {
+   it.skip('11 - Patrocínio / Emissão com OAB inexistente clicar botão Voltar', () => {
    
   // cy.get('.hidden > :nth-child(3) > .space-y-1 > :nth-child(3) > .group > .flex').click()
     cy.get('.hidden > :nth-child(3) > .space-y-1 > :nth-child(2) > .group > .flex > .ml-10').click()

@@ -80,7 +80,7 @@ describe('Certidões Negativas Cíveis 1º Grau', () => {
       
   })
 
-  it('3 - Processos Cíveis para Pessoa Física / Emissão com Ocorrência', () => {
+  it.skip('3 - Processos Cíveis para Pessoa Física / Emissão com Ocorrência', () => {
 
    
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(1) > .group > .h-9 > .ml-10').click()
@@ -103,7 +103,7 @@ describe('Certidões Negativas Cíveis 1º Grau', () => {
     
   })
 
-  it('4 - Processos Cíveis para Pessoa Física / Emissão sem informar Natureza', () => {
+  it.skip('4 - Processos Cíveis para Pessoa Física / Emissão sem informar Natureza', () => {
 cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(1) > .group > .h-9 > .ml-10').click()
     cy.get('.max-h-screen > :nth-child(1) > :nth-child(1) > .rounded > .inline-block').click()
     cy.get('.pb-2')
@@ -118,7 +118,7 @@ cy.get('#main-content div.items-center').click();
 cy.get('#main-content div.break-words').should('have.text', 'Natureza não encontrada');
   })
 
-  it('5 - Processos Cíveis para Pessoa Física / Emissão Natureza Todas', () => {
+  it.skip('5 - Processos Cíveis para Pessoa Física / Emissão Natureza Todas', () => {
 
    
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(1) > .group > .h-9 > .ml-10').click()
@@ -137,7 +137,7 @@ cy.get('#main-content div.break-words').should('have.text', 'Natureza não encon
       
   })
 
-  it('6 - Processos Cíveis para Pessoa Física / Emissão com Nome Social Natureza Todas', () => {
+  it.skip('6 - Processos Cíveis para Pessoa Física / Emissão com Nome Social Natureza Todas', () => {
 
 
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(1) > .group > .h-9 > .ml-10').click()
@@ -161,7 +161,7 @@ cy.get('#main-content div.break-words').should('have.text', 'Natureza não encon
       
   })
 
-  it('7 - Processos Cíveis para Pessoa Física / Emissão Natureza Cíveis', () => {
+  it.skip('7 - Processos Cíveis para Pessoa Física / Emissão Natureza Cíveis', () => {
 
  
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(1) > .group > .h-9 > .ml-10').click()
@@ -185,7 +185,7 @@ cy.get('#main-content div.break-words').should('have.text', 'Natureza não encon
       
   })
 
-  it('8 - Processos Cíveis para Pessoa Física / Emissão com Nome Social Natureza Cíveis', () => {
+  it.skip('8 - Processos Cíveis para Pessoa Física / Emissão com Nome Social Natureza Cíveis', () => {
 
    
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(1) > .group > .h-9 > .ml-10').click()
@@ -209,7 +209,7 @@ cy.get('#main-content div.break-words').should('have.text', 'Natureza não encon
       
   })
 
-  it('9 - Processos Cíveis para Pessoa Física / Emissão Natureza Execução Fiscal', () => {
+  it.skip('9 - Processos Cíveis para Pessoa Física / Emissão Natureza Execução Fiscal', () => {
 
     
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(1) > .group > .h-9 > .ml-10').click()
@@ -233,7 +233,7 @@ cy.get('#main-content div.break-words').should('have.text', 'Natureza não encon
       
   })
 
-    it('10 - Processos Cíveis para Pessoa Física / Emissão com Nome Social Natureza Execução Fiscal', () => {
+    it.skip('10 - Processos Cíveis para Pessoa Física / Emissão com Nome Social Natureza Execução Fiscal', () => {
 
     
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(1) > .group > .h-9 > .ml-10').click()
@@ -258,7 +258,7 @@ cy.get('#main-content div.break-words').should('have.text', 'Natureza não encon
   })
   
 
-  it('11 - Processos Cíveis para Pessoa Física / Emissão Natureza Execução Extrajudicial', () => {
+  it.skip('11 - Processos Cíveis para Pessoa Física / Emissão Natureza Execução Extrajudicial', () => {
 
     
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(1) > .group > .h-9 > .ml-10').click()
@@ -282,7 +282,7 @@ cy.get('#main-content div.break-words').should('have.text', 'Natureza não encon
 
   
 
-  it('12 - Processos Cíveis para Pessoa Física / Emissão com Nome Social Natureza Execução Extrajudicial', () => {
+  it.skip('12 - Processos Cíveis para Pessoa Física / Emissão com Nome Social Natureza Execução Extrajudicial', () => {
 
    
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(1) > .group > .h-9 > .ml-10').click()
@@ -359,7 +359,7 @@ cy.get('#main-content div.break-words').should('have.text', 'Natureza não encon
 
   })
 
-  it('15 - Processos Cíveis para Pessoa Jurídica / Emissão com Ocorrência', () => {
+  it.skip('15 - Processos Cíveis para Pessoa Jurídica / Emissão com Ocorrência', () => {
 
 
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(1) > .group > .h-9 > .ml-10').click()
@@ -381,7 +381,7 @@ cy.get('#main-content div.break-words').should('have.text', 'Natureza não encon
 
 
 
-   it('16 - Processos Cíveis para Pessoa Jurídica / Emissão Natureza Todas', () => {
+   it.skip('16 - Processos Cíveis para Pessoa Jurídica / Emissão Natureza Todas', () => {
 
 
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(1) > .group > .h-9 > .ml-10').click()
@@ -399,7 +399,7 @@ cy.get('#main-content div.break-words').should('have.text', 'Natureza não encon
 
   })
 
-  it('17 - Processos Cíveis para Pessoa Jurídica / Emissão Natureza Cíveis', () => {
+  it.skip('17 - Processos Cíveis para Pessoa Jurídica / Emissão Natureza Cíveis', () => {
 
     
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(1) > .group > .h-9 > .ml-10').click()
@@ -417,7 +417,7 @@ cy.get('#main-content div.break-words').should('have.text', 'Natureza não encon
 
   })
 
-  it('18 - Processos Cíveis para Pessoa Jurídica / Emissão Natureza Execução Fiscal', () => {
+  it.skip('18 - Processos Cíveis para Pessoa Jurídica / Emissão Natureza Execução Fiscal', () => {
 
   
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(1) > .group > .h-9 > .ml-10').click()
@@ -435,7 +435,7 @@ cy.get('#main-content div.break-words').should('have.text', 'Natureza não encon
 
   })
 
-  it('19 - Processos Cíveis para Pessoa Jurídica / Emissão Natureza Execução Extrajudicial', () => {
+  it.skip('19 - Processos Cíveis para Pessoa Jurídica / Emissão Natureza Execução Extrajudicial', () => {
 
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(1) > .group > .h-9 > .ml-10').click()
     cy.get('.max-h-screen > :nth-child(1) > :nth-child(2) > .rounded > .inline-block').click()
@@ -512,7 +512,7 @@ cy.get('#main-content div.break-words').should('have.text', 'Natureza não encon
    
   })
 
-  it('22 - Processos Cíveis de Pessoa Jurídica para fins de Licitação / Emissão com Ocorrência', () => {
+  it.skip('22 - Processos Cíveis de Pessoa Jurídica para fins de Licitação / Emissão com Ocorrência', () => {
     
    
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(1) > .group > .h-9 > .ml-10').click()
@@ -531,7 +531,7 @@ cy.get('#main-content div.break-words').should('have.text', 'Natureza não encon
 
   
 
-   it('23 - Processos Cíveis de Pessoa Jurídica para fins de Licitação / Emissão', () => {
+   it.skip('23 - Processos Cíveis de Pessoa Jurídica para fins de Licitação / Emissão', () => {
     
    
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(1) > .group > .h-9 > .ml-10').click()

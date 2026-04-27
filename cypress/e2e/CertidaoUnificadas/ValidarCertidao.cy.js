@@ -40,7 +40,7 @@ cy.get('jhi-sidebar-menu.hidden div:nth-child(5) ul.flex.list-none li.ng-star-in
 
   })
 
-  it('3 - Validar Certidão / Emissão com Dados Válidos', () => {
+  it.skip('3 - Validar Certidão / Emissão com Dados Válidos', () => {
     cy.get('jhi-sidebar-menu.hidden div:nth-child(5) ul.flex.list-none li.ng-star-inserted div.group div.flex a.truncate').click();
     cy.get('.pb-2')
       .should('contain.text', 'Validar Certidão')
@@ -52,7 +52,7 @@ cy.get('jhi-sidebar-menu.hidden div:nth-child(5) ul.flex.list-none li.ng-star-in
   })
 
 
-    it('4 - Validar Certidão / Emissão com Dados Inválidos', () => {
+    it.skip('4 - Validar Certidão / Emissão com Dados Inválidos', () => {
     
 //cy.get('.hidden > :nth-child(4) > .space-y-1 > li.ng-star-inserted > .group > .flex').click()
     

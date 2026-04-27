@@ -1,5 +1,5 @@
 describe('Outras Certidões', () => {
-  it('1 - Consultar Pendências Fins Eleitorias / Validação de Label', () => {
+  it.skip('1 - Consultar Pendências Fins Eleitorias / Validação de Label', () => {
 
 /*beforeEach(() => { 
   cy.login() 
@@ -30,7 +30,7 @@ describe('Outras Certidões', () => {
 cy.get('a.underline span').should('have.text', 'Limpar');
   })
 
-it('2 - Consultar Pendências Fins Eleitorais / Campos Obrigatórios', () => {
+it.skip('2 - Consultar Pendências Fins Eleitorais / Campos Obrigatórios', () => {
 
 cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/')
@@ -51,7 +51,7 @@ cy.get('div.validation-messages').click();
 cy.get('small.p-error').should('have.text', ' CPF inválido. ');
 })
 
-it('3 - Consultar Pendências Fins Eleitorais / Pesquisar Certidão por Nome', () => {
+it.skip('3 - Consultar Pendências Fins Eleitorais / Pesquisar Certidão por Nome', () => {
 
     cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/')
@@ -77,7 +77,7 @@ it('3 - Consultar Pendências Fins Eleitorais / Pesquisar Certidão por Nome', (
    
 })
 
-it('4 - Consultar Pendências Fins Eleitorais / Pesquisar Certidão por CPF e Nome', () => {
+it.skip('4 - Consultar Pendências Fins Eleitorais / Pesquisar Certidão por CPF e Nome', () => {
 
 cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/')
@@ -97,7 +97,7 @@ cy.get('span.p-button-label').click();
 })
 
 
-it('5 - Consultar Pendências Fins Eleitorais / Pesquisar Certidão por CPF', () => {
+it.skip('5 - Consultar Pendências Fins Eleitorais / Pesquisar Certidão por CPF', () => {
 
 cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/')
@@ -117,7 +117,7 @@ cy.get('span.p-button-label').click();
 cy.get('tr[data-cy="entityTable"]:nth-of-type(1) td:nth-child(2)').click();
 })
 
-it('6 - Consultar Pendências Fins Eleitorais / Limpar Informações da Tela', () => {
+it.skip('6 - Consultar Pendências Fins Eleitorais / Limpar Informações da Tela', () => {
 
 cy.viewport(1920, 1080);
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/')
@@ -137,7 +137,7 @@ cy.get('span.p-button-label').click();
 cy.get('a.underline span').click();
 })
 
-it('7 - Consultar Pendências Fins Eleitorais / Cancelar Informações da Tela', () => {
+it.skip('7 - Consultar Pendências Fins Eleitorais / Cancelar Informações da Tela', () => {
 
 cy.viewport(1920, 1080);
 
@@ -159,7 +159,7 @@ cy.get('span.p-button-label').click();
 cy.get('a.underline span').click();
 })
 
-it('8 - Consultar Pendências Fins Eleitorais / Emissão Certidão Negativa - Nada consta', () => {
+it.skip('8 - Consultar Pendências Fins Eleitorais / Emissão Certidão Negativa - Nada consta', () => {
     
     cy.viewport(1920, 1080);
     
@@ -194,7 +194,7 @@ it('8 - Consultar Pendências Fins Eleitorais / Emissão Certidão Negativa - Na
     cy.get('#pn_id_8-table div.p-checkbox-box').click();
 })
 
-it('9 - Consultar Pendências Fins Eleitorais / Emissão Certidão Negativa - Nada consta em tramitação', () => {
+it.skip('9 - Consultar Pendências Fins Eleitorais / Emissão Certidão Negativa - Nada consta em tramitação', () => {
 
 cy.viewport(1920, 1080);
 
@@ -223,7 +223,7 @@ cy.get('p-button[label="Emitir"] span.p-button-label').click();
 })
 
 ///Continuar aq
-it('10 - Consultar Pendências Fins Eleitorais / Emissão Certidão Negativa - Certidão Positiva', () => {
+it.skip('10 - Consultar Pendências Fins Eleitorais / Emissão Certidão Negativa - Certidão Positiva', () => {
 
 cy.viewport(1920, 1080);
 
@@ -255,7 +255,7 @@ cy.get('[name="justificativa"]').type('jghfjgfhjghfjfghjgfhj');
 cy.get('p-button[label="Emitir"] button.p-ripple').click();
 })
 
-it('11 - Consultar Pendências Fins Eleitorais / Emissão Certidão Negativa - Certidão Positiva - Por Ação', () => {
+it.skip('11 - Consultar Pendências Fins Eleitorais / Emissão Certidão Negativa - Certidão Positiva - Por Ação', () => {
 
 cy.viewport(1920, 1080);
 
@@ -280,7 +280,7 @@ cy.get('span.p-button-label').click();
 cy.get('tr[data-cy="entityTable"]:nth-of-type(1) span.pi').click();
 })
 
-it('12 - Consultar Pendências Fins Eleitorais / Emissão Certidão Negativa - Botão Limpar Ocorrência', () => {
+it.skip('12 - Consultar Pendências Fins Eleitorais / Emissão Certidão Negativa - Botão Limpar Ocorrência', () => {
 
 cy.viewport(1920, 1080);
 

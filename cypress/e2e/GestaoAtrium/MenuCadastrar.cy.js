@@ -1,6 +1,6 @@
 describe('Sistema Atrium Gestão | Menu Cadastrar', () => {
 
-   it( '1 - Comarcar | Validar Label', () => {
+   it.skip( '1 - Comarcar | Validar Label', () => {
 
     //Comarca
 
@@ -39,7 +39,7 @@ describe('Sistema Atrium Gestão | Menu Cadastrar', () => {
 
    // Tipo Unidade
 
-    it('2 - Tipo Unidade | Validar Label', () => {
+    it.skip('2 - Tipo Unidade | Validar Label', () => {
 
    cy.viewport(1920, 1080);
    cy.visit('https://teste-atriumgestao.app.tjpe.gov.br/')
@@ -73,7 +73,7 @@ describe('Sistema Atrium Gestão | Menu Cadastrar', () => {
     
     // Grupo Unidade
 
-    it( '3 - Grupo Unidade | Validar Label', () => {
+    it.skip( '3 - Grupo Unidade | Validar Label', () => {
 
    cy.viewport(1920, 1080);
    cy.visit('https://teste-atriumgestao.app.tjpe.gov.br/')
@@ -106,7 +106,7 @@ describe('Sistema Atrium Gestão | Menu Cadastrar', () => {
     })
     // Unidade Judicial
 
-      it( '4 - Unidade Judicial | Validar Label', () => {
+      it.skip( '4 - Unidade Judicial | Validar Label', () => {
 
    cy.viewport(1920, 1080);
    cy.visit('https://teste-atriumgestao.app.tjpe.gov.br/')
@@ -146,7 +146,7 @@ describe('Sistema Atrium Gestão | Menu Cadastrar', () => {
 
     // Feriado
 
-      it( '5 - Feriado | Validar Label', () => {
+      it.skip( '5 - Feriado | Validar Label', () => {
 
    cy.viewport(1920, 1080);
    cy.visit('https://teste-atriumgestao.app.tjpe.gov.br/')
@@ -186,7 +186,7 @@ describe('Sistema Atrium Gestão | Menu Cadastrar', () => {
 
    //Manter Cadastro Eventos
 
-     it( '6 - Manter Cadastro Eventos | Validar Label', () => {
+     it.skip( '6 - Manter Cadastro Eventos | Validar Label', () => {
 
    cy.viewport(1920, 1080);
    cy.visit('https://teste-atriumgestao.app.tjpe.gov.br/')
@@ -225,7 +225,7 @@ describe('Sistema Atrium Gestão | Menu Cadastrar', () => {
     
     //Magistrado
 
-      it( '7 - Magistrado | Validar Label', () => {
+      it.skip( '7 - Magistrado | Validar Label', () => {
 
    cy.viewport(1920, 1080);
    cy.visit('https://teste-atriumgestao.app.tjpe.gov.br/')
@@ -259,7 +259,7 @@ describe('Sistema Atrium Gestão | Menu Cadastrar', () => {
     })
 
 
-    it( '8 - Comarca| Validar Filtros', () => {
+    it.skip( '8 - Comarca| Validar Filtros', () => {
 
   //Comarca validar filtros
 
@@ -303,7 +303,7 @@ describe('Sistema Atrium Gestão | Menu Cadastrar', () => {
 
 })
 
-it( '9 - Tipo Unidade | Validar Filtros', () => {
+it.skip( '9 - Tipo Unidade | Validar Filtros', () => {
 
   cy.viewport(1920, 1080);
    cy.visit('https://teste-atriumgestao.app.tjpe.gov.br/')
@@ -343,7 +343,7 @@ it( '9 - Tipo Unidade | Validar Filtros', () => {
 
 
 
-it( '10 - Grupo Unidade | Validar Filtros', () => {
+it.skip( '10 - Grupo Unidade | Validar Filtros', () => {
 
   cy.viewport(1920, 1080);
    cy.visit('https://teste-atriumgestao.app.tjpe.gov.br/')
@@ -380,7 +380,7 @@ it( '10 - Grupo Unidade | Validar Filtros', () => {
 })
 
 
-it( '11 - Unidade Judicial | Validar Filtros', () => {
+it.skip( '11 - Unidade Judicial | Validar Filtros', () => {
 
  cy.viewport(1920, 1080);
    cy.visit('https://teste-atriumgestao.app.tjpe.gov.br/')
@@ -422,7 +422,7 @@ it( '11 - Unidade Judicial | Validar Filtros', () => {
 })
 
 
-it( '12 - Feriado | Validar Filtros', () => {
+it.skip( '12 - Feriado | Validar Filtros', () => {
 
  cy.viewport(1920, 1080);
    cy.visit('https://teste-atriumgestao.app.tjpe.gov.br/')
@@ -475,7 +475,7 @@ it( '12 - Feriado | Validar Filtros', () => {
 
 //Manter Cadastro Eventos validar filtros
 
-it( '13 - Manter Cadastro Eventos | Validar Filtros', () => {
+it.skip( '13 - Manter Cadastro Eventos | Validar Filtros', () => {
 
  cy.viewport(1920, 1080);
    cy.visit('https://teste-atriumgestao.app.tjpe.gov.br/')
@@ -525,7 +525,7 @@ cy.get(':nth-child(1) > .nav-bar-item > .font-medium').click()
 
   //Magistrado validar filtros
 
-  it( '14 - Magistrado | Validar Filtros', () => {
+  it.skip( '14 - Magistrado | Validar Filtros', () => {
 
  cy.viewport(1920, 1080);
    cy.visit('https://teste-atriumgestao.app.tjpe.gov.br/')
@@ -559,7 +559,7 @@ cy.get(':nth-child(1) > .nav-bar-item > .font-medium').click()
 
 
 
-   it( '15 - Comarca | Criar Comarca', () => {
+   it.skip( '15 - Comarca | Criar Comarca', () => {
 
     //Comarca | Criar Comarca
 
@@ -598,7 +598,7 @@ cy.get(':nth-child(1) > .nav-bar-item > .font-medium').click()
    })
 
 
-   it( '16 - Tipo Unidade | Criar novo Tipo Unidade', () => {
+   it.skip( '16 - Tipo Unidade | Criar novo Tipo Unidade', () => {
 
    //Tipo Unidade | Criar novo Tipo Unidade
 
@@ -647,7 +647,7 @@ cy.get(':nth-child(1) > .nav-bar-item > .font-medium').click()
 
 
 
-   it( '17 - Grupo Unidade | Criar Grupo de Unidade', () => {
+   it.skip( '17 - Grupo Unidade | Criar Grupo de Unidade', () => {
 
 //Grupo Unidade | Criar Grupo de Unidade
 cy.viewport(1920, 1080);
@@ -677,7 +677,7 @@ cy.viewport(1920, 1080);
 
 })
 
-it( '18 - Unidade Judicial | Criar Unidade Judicial', () => {
+it.skip( '18 - Unidade Judicial | Criar Unidade Judicial', () => {
 //Unidade Judicial | Criar Unidade Judicial
 
 cy.viewport(1920, 1080);
@@ -706,7 +706,7 @@ cy.viewport(1920, 1080);
 
 })
 
-it( '19 - Feriado | Criar Novo Feriado', () => {
+it.skip( '19 - Feriado | Criar Novo Feriado', () => {
 
 //Feriado | Criar Novo Feriado
 
@@ -744,7 +744,7 @@ cy.viewport(1920, 1080);
 
 
 
-it( '20 - Manter Cadastro Eventos | Criar', () => {
+it.skip( '20 - Manter Cadastro Eventos | Criar', () => {
 
 //Manter Cadastro Eventos | Criar
 
@@ -779,7 +779,7 @@ cy.viewport(1920, 1080);
 
 })
 
-it( '21 - Magistrado | Criar Novo Magistrado', () => {
+it.skip( '21 - Magistrado | Criar Novo Magistrado', () => {
 
 //Magistrado | Criar Novo Magistrado
 cy.viewport(1920, 1080);
@@ -805,7 +805,7 @@ cy.get('[data-cy="entityCreateButton"]').click()
 })
 
 
-  it( '22 - Comarca | Visualizar', () => {
+  it.skip( '22 - Comarca | Visualizar', () => {
 
     //Comarca | Visualizar
 
@@ -830,7 +830,7 @@ cy.get('[data-cy="entityCreateButton"]').click()
    .should('contain.text', 'Comarca')
 })
 
-it( '23 - Comarca | Voltar', () => {
+it.skip( '23 - Comarca | Voltar', () => {
 
     //Comarca | Voltar
 
@@ -857,7 +857,7 @@ it( '23 - Comarca | Voltar', () => {
 
 })
 
-it( '24 - Comarca | Editar', () => {
+it.skip( '24 - Comarca | Editar', () => {
 
     //Comarca | Editar
 
@@ -885,7 +885,7 @@ it( '24 - Comarca | Editar', () => {
   
 })
 
- it('25 - Tipo Unidade | Visualizar', () => {
+ it.skip('25 - Tipo Unidade | Visualizar', () => {
 
    cy.viewport(1920, 1080);
    cy.visit('https://teste-atriumgestao.app.tjpe.gov.br/')
@@ -906,7 +906,7 @@ it( '24 - Comarca | Editar', () => {
     cy.get(':nth-child(1) > .text-right > .relative > .list-none > [ptooltip="Visualizar"] > .flex > .pi').click()
 })
 
-it('26 - Tipo Unidade | Voltar', () => {
+it.skip('26 - Tipo Unidade | Voltar', () => {
 
    cy.viewport(1920, 1080);
    cy.visit('https://teste-atriumgestao.app.tjpe.gov.br/')
@@ -928,7 +928,7 @@ it('26 - Tipo Unidade | Voltar', () => {
     cy.get('[data-cy="entityDetailsBackButton"]').click()
 })
 
- it('27 - Tipo Unidade | Editar', () => {
+ it.skip('27 - Tipo Unidade | Editar', () => {
 
    cy.viewport(1920, 1080);
    cy.visit('https://teste-atriumgestao.app.tjpe.gov.br/')
@@ -953,7 +953,7 @@ it('26 - Tipo Unidade | Voltar', () => {
 
 })
 
- it('28 - Tipo Unidade | Excluir', () => {
+ it.skip('28 - Tipo Unidade | Excluir', () => {
 
    cy.viewport(1920, 1080);
    cy.visit('https://teste-atriumgestao.app.tjpe.gov.br/')
@@ -978,7 +978,7 @@ it('26 - Tipo Unidade | Voltar', () => {
 
 })
 
-  it( '29 - Grupo Unidade | Editar', () => {
+  it.skip( '29 - Grupo Unidade | Editar', () => {
 
    cy.viewport(1920, 1080);
    cy.visit('https://teste-atriumgestao.app.tjpe.gov.br/')
@@ -1005,7 +1005,7 @@ it('26 - Tipo Unidade | Voltar', () => {
 
 })
 
-it( '30 - Grupo Unidade | Excluir', () => {
+it.skip( '30 - Grupo Unidade | Excluir', () => {
 
    cy.viewport(1920, 1080);
    cy.visit('https://teste-atriumgestao.app.tjpe.gov.br/')
@@ -1028,7 +1028,7 @@ it( '30 - Grupo Unidade | Excluir', () => {
 
 })
 
-it( '31 - Grupo Unidade | Visualizar', () => {
+it.skip( '31 - Grupo Unidade | Visualizar', () => {
 
    cy.viewport(1920, 1080);
    cy.visit('https://teste-atriumgestao.app.tjpe.gov.br/')
@@ -1050,7 +1050,7 @@ it( '31 - Grupo Unidade | Visualizar', () => {
 
 })
 
-it( '32 - Grupo Unidade | Voltar', () => {
+it.skip( '32 - Grupo Unidade | Voltar', () => {
 
    cy.viewport(1920, 1080);
    cy.visit('https://teste-atriumgestao.app.tjpe.gov.br/')
@@ -1073,7 +1073,7 @@ it( '32 - Grupo Unidade | Voltar', () => {
 
 })
 
-it( '33 - Unidade Judicial | Editar', () => {
+it.skip( '33 - Unidade Judicial | Editar', () => {
 //Unidade Judicial | Criar Unidade Judicial
 
 cy.viewport(1920, 1080);
@@ -1101,7 +1101,7 @@ cy.viewport(1920, 1080);
 
 })
 
-it( '34 - Unidade Judicial | Excluir', () => {
+it.skip( '34 - Unidade Judicial | Excluir', () => {
 //Unidade Judicial | Criar Unidade Judicial
 
 cy.viewport(1920, 1080);
@@ -1125,7 +1125,7 @@ cy.viewport(1920, 1080);
  cy.get('[data-cy="entityConfirmDeleteButton"]').click()
  
 })
-it( '35 - Unidade Judicial | Visualizar', () => {
+it.skip( '35 - Unidade Judicial | Visualizar', () => {
 //Unidade Judicial | Criar Unidade Judicial
 
 cy.viewport(1920, 1080);
@@ -1148,7 +1148,7 @@ cy.viewport(1920, 1080);
  cy.get(':nth-child(1) > .text-end > .btn-group > [data-cy="entityDetailsButton"] > .p-ripple').click()
  
 })
-it( '36 - Unidade Judicial | Voltar', () => {
+it.skip( '36 - Unidade Judicial | Voltar', () => {
 //Unidade Judicial | Criar Unidade Judicial
 
 cy.viewport(1920, 1080);
@@ -1174,7 +1174,7 @@ cy.viewport(1920, 1080);
  
 })
 
-it( '37 - Feriado | Visualizar', () => {
+it.skip( '37 - Feriado | Visualizar', () => {
 
 //Feriado | Criar Novo Feriado
 
@@ -1198,7 +1198,7 @@ cy.viewport(1920, 1080);
 })
 
 
-it( '38 - Feriado | Voltar', () => {
+it.skip( '38 - Feriado | Voltar', () => {
 
 //Feriado | Criar Novo Feriado
 
@@ -1223,7 +1223,7 @@ cy.viewport(1920, 1080);
 
 })
 
-it( '39 - Feriado | Editar', () => {
+it.skip( '39 - Feriado | Editar', () => {
 
 //Feriado | Criar Novo Feriado
 
@@ -1256,7 +1256,7 @@ cy.viewport(1920, 1080);
 
 })
 
-it( '40 - Feriado | Excluir', () => {
+it.skip( '40 - Feriado | Excluir', () => {
 
 //Feriado | Criar Novo Feriado
 

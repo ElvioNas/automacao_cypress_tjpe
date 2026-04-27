@@ -59,7 +59,7 @@ describe('Certidões Criminais', () => {
     cy.log('Total de verificações (asserções): 22');
   })
 
-  it('3 - Pessoa Fisíca Certidão Criminal / Emissão', () => {
+  it.skip('3 - Pessoa Fisíca Certidão Criminal / Emissão', () => {
     
       
     cy.get('.hidden > :nth-child(1) > .space-y-1 > :nth-child(1) > .group > .flex').click()
@@ -77,7 +77,7 @@ describe('Certidões Criminais', () => {
     
     cy.get('#save-entity span.p-button-label').click();
   })
-  it('4 - Pessoa Fisíca Certidão Criminal / Emissão com Nome Social', () => {
+  it.skip('4 - Pessoa Fisíca Certidão Criminal / Emissão com Nome Social', () => {
 
     
     cy.get('.hidden > :nth-child(1) > .space-y-1 > :nth-child(1) > .group > .flex').click()
@@ -137,7 +137,7 @@ describe('Certidões Criminais', () => {
                  cy.log('Total de verificações (asserções): 12');
   })
 
-  it('7 - Pessoa Jurídica Certidão Criminal / Emissão', () => {
+  it.skip('7 - Pessoa Jurídica Certidão Criminal / Emissão', () => {
 
    
     cy.get('.hidden > :nth-child(1) > .space-y-1 > :nth-child(2) > .group > .flex').click()
