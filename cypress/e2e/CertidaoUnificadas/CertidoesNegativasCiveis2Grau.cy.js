@@ -5,8 +5,7 @@ describe('Certidões Negativas Cíveis 2º Grau', () => {
 
      })
   it('1 - Processos Cíveis para Pessoa Física 2º Grau e Colégio Recursal / Validação de Label', () => {
-   // cy.viewport(1920, 1080);
-    //cy.visit('https://teste-certidoesunificadas.app.tjpe.gov.br/')
+   
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(2) > .group > .h-9').click()
     cy.get('.max-h-screen > :nth-child(1) > :nth-child(1) > .rounded > .inline-block').click()
     cy.get('.pb-2')
@@ -32,13 +31,12 @@ describe('Certidões Negativas Cíveis 2º Grau', () => {
       .should('contain.text', 'Emitir')
     cy.log('Total de verificações (asserções): 14');
    cy.get('#main-content div.pt-1').click();
- //  cy.get('#main-content div.pt-1 span:nth-child(1)').should('have.text', 'Emissão de Certidões | Versão v1.2.0-SNAPSHOT');
+ 
   })
 
 
   it('2 - Processos Cíveis para Pessoa Física 2º Grau e Colégio Recursal / Campos Obrigatórios', () => {
-   // cy.viewport(1920, 1080);
-   // cy.visit('https://teste-certidoesunificadas.app.tjpe.gov.br/')
+   
     cy.get('.hidden > :nth-child(2) > .space-y-1 > :nth-child(2) > .group > .h-9').click()
     cy.get('.max-h-screen > :nth-child(1) > :nth-child(1) > .rounded > .inline-block').click()
     cy.get('.pb-2')
@@ -70,7 +68,7 @@ describe('Certidões Negativas Cíveis 2º Grau', () => {
      .should('be.visible')
              .and('contain.text', 'O campo é obrigatório.')
    cy.get('#main-content div.pt-1').click();
-   //cy.get('#main-content div.pt-1 span:nth-child(1)').should('have.text', 'Emissão de Certidões | Versão v1.2.0-SNAPSHOT');
+   
   })
 
    it.skip('3 - Processos Cíveis para Pessoa Física 2º Grau e Colégio Recursal / Emissão com Ocorrência', () => {

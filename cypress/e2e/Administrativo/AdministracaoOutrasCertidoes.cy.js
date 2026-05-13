@@ -180,10 +180,7 @@ it.skip('8 - Consultar Pendências Fins Eleitorais / Emissão Certidão Negativa
     cy.get('[data-cy="documento"]').click();
     cy.get('[data-cy="documento"]').type('312.149.830-49');
     cy.get('span.p-button-label').click();
-    //cy.get('tr[data-cy="entityTable"]:nth-of-type(4) td:nth-child(5)').click();
-    //cy.get('div.flex.gap-2 button:nth-child(1)').click();
-    //cy.get('[name="justificativa"]').type('asrfweqreqwrwer');
-    //cy.get('p-button[label="Emitir"] span.p-button-label').click();
+    
     cy.get('tr[data-cy="entityTable"]:nth-of-type(1) td:nth-child(2)').click();
     cy.get('#pn_id_8-table div.p-checkbox-box').click();
     cy.get('#pn_id_8-table div.p-highlight').click();

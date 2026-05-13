@@ -13,11 +13,7 @@ it.skip('1 - Relatório / Validação de Label', () => {
     cy.get('[data-cy="login"] span.font-medium').click();
     cy.wait(9000)
     cy.visit('https://avaliacaoestagioprobatorio.teste.svc.tjpe.jus.br/')
-    //cy.visit('https://avaliacaoestagioprobatorio.teste.svc.tjpe.jus.br/')
-       // cy.get('#home-logged-message').click();
-       // cy.get('#home-logged-message span.font-bold').should('have.text', 'Elvio Ferreira do Nascimento.');
-      //  cy.get('div.self-center').click();
-      //  cy.get('div.self-center').should('have.text', 'Estágio Probratorio');
+    
     cy.get('[data-cy="navbar"] li:nth-child(1) a.font-medium span.font-medium').should('have.text', 'Gerenciamento');
     cy.get('[data-cy="navbar"] li:nth-child(2) a.font-medium span.font-medium').should('have.text', 'Relatórios');
     cy.get('[data-cy="navbar"] li:nth-child(3) a.font-medium span.font-medium').should('have.text', 'Selecione');
@@ -43,7 +39,7 @@ it.skip('1 - Relatório / Validação de Label', () => {
     cy.get('#entities th[jhisortby="dataSextaEtapa"] span.uppercase').should('have.text', 'Data Conclusão');
     cy.get('#entities th[jhisortby="mediaGeral"] div.items-center.justify-center').click();
     cy.get('#entities span.text-center').should('have.text', 'Média Geral');
-    //cy.get('button[pc9=""] span.p-button-label').should('have.text', 'Exportar');
+    
     cy.get('button[pc141=""] span.p-button-label').should('have.text', 'Exportar');
     
         cy.get('button.block span.p-button-label').click();
@@ -65,7 +61,7 @@ it.skip('1 - Relatório / Validação de Label', () => {
     cy.get('div:nth-child(6) label.inline-block').should('have.text', 'Data Conclusão Final');
     cy.get('div.col-span-12.flex').click();
     cy.get('a.underline span').should('have.text', 'Limpar Todos');
-    //cy.get('button[pc64=""] span.p-button-label').should('have.text', 'Aplicar');
+    
     cy.get('button[pc196=""] span.p-button-label').should('have.text', 'Aplicar');
 })
 })

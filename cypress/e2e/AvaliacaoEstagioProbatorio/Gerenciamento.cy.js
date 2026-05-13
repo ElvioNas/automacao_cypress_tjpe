@@ -102,7 +102,7 @@ it.skip('5 - Gerenciar tarefas de produtividade / Validação de Label', () => {
     cy.get('[data-cy="navbar"] li:nth-child(1) a.font-medium span.font-medium').click();
     cy.get('[data-cy="navbar"] a[href="/tarefa"] span.font-medium').click();
     cy.get('div.justify-between').click();
-    //cy.get('[data-cy="TarefaHeading"] span').should('have.text', 'Tarefas');
+    
     cy.get('button.relative').click();
     cy.get('h3').click();
     cy.get('h3').should('have.text', 'Busca por filtros');
@@ -118,7 +118,7 @@ it.skip('5 - Gerenciar tarefas de produtividade / Validação de Label', () => {
     cy.get('div.flex.justify-end').click();
     cy.get('a.underline span').should('have.text', 'Limpar Todos');
     cy.get('div.grid').click();
-       // cy.get('button[pc68=""] span.p-button-label').should('have.text', 'Aplicar');
+       
        cy.get('button[pc220=""]').should('have.text', '\n            Aplicar\n          ');
         cy.get('[data-cy="entityCreateButton"] span.p-button-label').should('have.text', ' Criar novo Tarefa ');
     cy.get('[data-cy="entityCreateButton"] span.p-button-label').click();
@@ -215,16 +215,13 @@ it.skip('8 - Gerenciar tarefas de produtividade / Filtro utilizar o botão Limpa
     cy.get('[data-cy="login"] span.font-medium').click();
     cy.wait(9000)
     cy.visit('https://avaliacaoestagioprobatorio.teste.svc.tjpe.jus.br/')
-    //cy.get('#home-logged-message').click();
-    //cy.get('#home-logged-message span.font-bold').should('have.text', 'Elvio Ferreira do Nascimento.');
-   // cy.get('div.self-center').click();
-    //cy.get('div.self-center').should('have.text', 'Estágio Probratorio');
+    
     cy.get('[data-cy="navbar"] li:nth-child(1) a.font-medium span.font-medium').should('have.text', 'Gerenciamento');
     cy.get('[data-cy="navbar"] li:nth-child(2) a.font-medium span.font-medium').should('have.text', 'Relatórios');
     cy.get('[data-cy="navbar"] li:nth-child(1) a.font-medium span.font-medium').click();
     cy.get('[data-cy="navbar"] a[href="/tarefa"] span.font-medium').click();
     cy.get('div.justify-between').click();
-   // cy.get('[data-cy="TarefaHeading"] span').should('have.text', 'Tarefas');
+   
     cy.get('button.relative').click();
     cy.get('h3').click();
     cy.get('h3').should('have.text', 'Busca por filtros');
@@ -240,7 +237,7 @@ it.skip('8 - Gerenciar tarefas de produtividade / Filtro utilizar o botão Limpa
     cy.get('div.flex.justify-end').click();
     cy.get('a.underline span').should('have.text', 'Limpar Todos');
     cy.get('div.grid').click();
-    //cy.get('button[pc68=""] span.p-button-label').should('have.text', 'Aplicar');
+    
     cy.get('[data-cy="entityCreateButton"] span.p-button-label').should('have.text', ' Criar novo Tarefa ');
     cy.get('[data-cy="id"]').click();
     cy.get('[data-cy="id"]').type('1');
@@ -262,10 +259,7 @@ it.skip('9 - Gerenciar atividades de produtividade / Validação de Label', () =
     cy.get('[data-cy="login"] span.font-medium').click();
     cy.wait(9000)
     cy.visit('https://avaliacaoestagioprobatorio.teste.svc.tjpe.jus.br/')
-   // cy.get('#home-logged-message').click();
-   // cy.get('#home-logged-message span.font-bold').should('have.text', 'Elvio Ferreira do Nascimento.');
-   // cy.get('div.self-center').click();
-  //  cy.get('div.self-center').should('have.text', 'Estágio Probratorio');
+   
     cy.get('[data-cy="navbar"] li:nth-child(1) a.font-medium span.font-medium').should('have.text', 'Gerenciamento');
     cy.get('[data-cy="navbar"] li:nth-child(2) a.font-medium span.font-medium').should('have.text', 'Relatórios');
     cy.get('[data-cy="navbar"] li:nth-child(1) a.font-medium span.font-medium').click();

@@ -43,10 +43,7 @@ describe('LegJud | Menu Prcessos de 2º Grau', () => {
           cy.get('li:nth-of-type(2) [data-cy="adminMenu"] span.font-medium').click();
           cy.get('[data-cy="navbar"] a[routerlink="/remessa-devolucao-advogado-2-grau"] span.font-medium').click();
           cy.get('[data-cy="Processo1GrauHeading"] span').should('have.text', 'Remessa Carga ao Advogado 2º Grau');
-          //cy.get('div:nth-child(1) > div.align-end > label.inline-block').should('have.text', 'NPU:');
-          //cy.get('div:nth-child(2) > div.align-end > label.inline-block').should('have.text', 'Número:');
-          //cy.get('span.p-button-label').should('have.text', 'Aplicar');
-          //cy.get('a.underline span').should('have.text', 'Limpar');
+          
       cy.get('label.inline-block').click();
       cy.get('label.inline-block').should('have.text', 'Buscar por:');
       cy.get('label[for="rbNpu"]').should('have.text', 'NPU');

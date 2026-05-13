@@ -115,7 +115,7 @@ describe('Sismap | Ausências', () => {
    cy.get('[data-cy="servidor"] [name="servidor"]').click();
    cy.get('[data-cy="servidor"] [name="servidor"]').type('02112357417');
    cy.get('#input_filter_servidor_0 div.flex > div:nth-child(1)').click();
-   //cy.get('button.p-button-sm.p-button-rounded span.p-button-label').click();
+   
    cy.get('tr[data-cy="entityTable"]:nth-of-type(1) i.pi-pencil').click();
    cy.get('#field_tipoAusencia span.p-element').click();
    cy.get('#field_tipoAusencia_2').click();

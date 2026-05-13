@@ -13,7 +13,7 @@ cy.viewport(1920, 1080);
 cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
 cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
 cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/') 
-cy.visit
+
 cy.get('.alert-link').click()
 cy.wait(8000) //Digite o seu CPF e click para confirmar
 cy.get('.inline-block')
@@ -412,7 +412,7 @@ cy.get('[data-cy="documento"]').type('76.895.473/0001-66');
 cy.get('button.p-button').click();
 cy.get('tr[data-cy="entityTable"]:nth-of-type(1) button.p-ripple').click();
 
-//cy.get('span.p-button-label').click();
+
 })
 
 it.skip('19 - Consultar Pendências Pessoa Jurídica / Limpar Informações', () => {
@@ -625,22 +625,7 @@ cy.viewport(1920, 1080);
     cy.wait(3000)
     cy.get('[data-cy="entityTable"] > :nth-child(1) > a').click()
     cy.wait(3000)
-/*cy.get('#viewer span:nth-child(3)').click();
-cy.get('#viewer span:nth-child(3)').should('have.text', 'TRIBUNAL DE JUSTIÇA');
-cy.get('#viewer span:nth-child(1)').should('have.text', 'PODER JUDICIÁRIO DO ESTADO DE PERNAMBUCO');
-cy.get('#viewer span:nth-child(5)').click();
-cy.get('#viewer span:nth-child(5)').should('have.text', 'DIRETORIA DO FORO DA CAPITAL');
-cy.get('#viewer span:nth-child(7)').click();
-cy.get('#viewer span:nth-child(7)').should('have.text', 'CENTRAL DE EMISSÃO DE ANTECEDENTES');
-cy.get('#viewer span:nth-child(9)').should('have.text', 'FÓRUM DES. RODOLFO AURELIANO');
-cy.get('#viewer span:nth-child(13)').should('have.text', 'FONES Nº (081) 3181-0400 E 3181-0470');
-cy.get('#viewer span:nth-child(15)').should('have.text', 'CEP 50.090-700 - RECIFE - PE');
-cy.get('#viewer span:nth-child(17)').should('have.text', 'CERTIDÃO CÍVEL');
-cy.get('#viewer span:nth-child(19)').should('have.text', 'VALIDADE 30 DIAS DA EMISSÃO');
-cy.get('#viewer span:nth-child(43)').should('have.text', 'SAMBA RECIFE');
-cy.get('#viewer span:nth-child(47)').should('have.text', '33.217.425/0001-06');
 
-*/
 })
 
 it.skip('28 - Consultar Certidões / Consultar pelo CNPJ, Exibir e Voltar', () => {
@@ -795,8 +780,7 @@ it.skip('32 - Relatório de Certidões Cíveis Emitidas / Pesquisa e Validar Dat
 it.skip('33 - Relatório de Certidões Cíveis Emitidas / Pesquisa por Período e Exportar Total', () => {
 
     cy.viewport(1920, 1080);
-    // cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
-    //cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/') 
+
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/')
     cy.get('.alert-link').click()
@@ -815,8 +799,7 @@ it.skip('33 - Relatório de Certidões Cíveis Emitidas / Pesquisa por Período 
 it.skip('34 - Relatório de Certidões Cíveis Emitidas / Pesquisa por Período e Exportar Servidor', () => {
 
     cy.viewport(1920, 1080);
-    //cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
-   // cy.visit('https://homologacao-certidoesunificadasadmin.app.tjpe.gov.br/') 
+  
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/certidao')
     cy.visit('https://teste-certidoesunificadasadmin.app.tjpe.gov.br/')
     cy.get('.alert-link').click()
