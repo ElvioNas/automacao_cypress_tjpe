@@ -6,7 +6,7 @@ describe('Administração Certidões Cíveis', () => {
 
      }) */
   
-it.skip('1 - Consultar Pendências Pessoa Física / Validação de Label', () => {
+it('1 - Consultar Pendências Pessoa Física / Validação de Label', () => {
 
 cy.viewport(1920, 1080);
 cy.viewport(1920, 1080);
