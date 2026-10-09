@@ -7,56 +7,94 @@ describe('Certidões Criminais', () => {
   
   it('1 - Pessoa Fisíca Certidão Criminal / Validação de Label', () => {
  cy.get('.hidden > :nth-child(1) > .space-y-1 > :nth-child(1) > .group > .flex').click()
+ cy.wait(1000)
     cy.get('.pb-2')
       .should('contain.text', 'Certidão Criminal - Pessoa Física')
+      cy.wait(1000)
     cy.get('.grid > :nth-child(1) > .inline-block')
       .should('contain.text', 'Nome Completo*')
+      cy.wait(1000)
       cy.get('.grid > :nth-child(1) > .text-sm')
     .should('contain.text', 'Deseja usar nome social')
+    cy.wait(1000)
     cy.get('.p-checkbox-box').click()
+    cy.wait(1000)
     cy.get('.ng-star-inserted > .inline-block')
       .should('contain.text', 'Nome Social Nome pelo qual se identifica e é reconhecido(a) socialmente')
+      cy.wait(1000)
     cy.get(':nth-child(3) > .inline-block')
       .should('contain.text', 'CPF*')
+      cy.wait(1000)
     cy.get(':nth-child(4) > .inline-block')
       .should('contain.text', 'Data de Nascimento*')
+      cy.wait(1000)
     cy.get(':nth-child(5) > .inline-block')
       .should('contain.text', 'Nome da Mãe*')
  
       
  cy.get('#main-content label[for="field_nomePai"]').should('have.text', 'Nome do Pai');
+  cy.wait(1000)
  cy.get('#main-content label[for="field_captcha"]').should('have.text', 'Código de Segurança');
+  cy.wait(1000)
  cy.get('#cancel-save span.p-button-label').should('have.text', ' Voltar ');
-  })    
+ cy.wait(1000)
+ cy.get('[data-cy="nomeCompleto"]').type('JOAO FRANCISCO')
+ cy.get('[data-cy="nomeSocial"]').type('JOAO')
+ 
+ 
+ cy.get('#field_cpf > .p-inputtext').click()
+ cy.get('#main-content label[for="field_dataNascimento"]').should('have.text', '\n              Data de Nascimento*\n            ');
+  })
+
+
+
+
+
 
   it('2 - Pessoa Fisíca Certidão Criminal / Validação Campos Obrigatórios', () => {
 
 
     cy.get('.hidden > :nth-child(1) > .space-y-1 > :nth-child(1) > .group > .flex').click()
+     cy.wait(1000)
     cy.get('[data-cy="nomeCompleto"]').type('JOAO FRANCISCO').clear()
+     cy.wait(1000)
+
     cy.get('small.p-error')
-       .should('be.visible')
-             .and('contain.text', 'O campo é obrigatório.')
+      .should('be.visible')
+            .and('contain.text', 'O campo é obrigatório.')
+             cy.wait(1000)
+
     cy.get('.p-checkbox-box').click()
+     cy.wait(1000)
     cy.get('[data-cy="nomeSocial"]').type('JOAO FRANCISCO').clear()
+     cy.wait(1000)
     cy.get('#field_cpf > .p-inputtext').type('12345678987').clear()
+     cy.wait(1000)
     cy.get('small.p-error')
        .should('be.visible')
              .and('contain.text', 'O campo é obrigatório.')
+              cy.wait(1000)
     cy.get('.w-full > .p-element').type('01012000').clear()
+     cy.wait(1000)
      cy.get('small.p-error')
        .should('be.visible')
              .and('contain.text', 'O campo é obrigatório.')
+              cy.wait(1000)
     cy.get('[data-cy="nomeMae"]').type('Maria de Fátima').clear()
+     cy.wait(1000)
     cy.get('small.p-error')
        .should('be.visible')
              .and('contain.text', 'O campo é obrigatório.')
+              cy.wait(1000)
     cy.get('[data-cy="nomePai"]').type('João da Silva').clear()
+     cy.wait(1000)
     cy.get('[data-cy="captcha"]').type('12345').clear()
+     cy.wait(1000)
       cy.get('small.p-error')
        .should('be.visible')
              .and('contain.text', 'O campo é obrigatório.')
-    cy.log('Total de verificações (asserções): 22');
+              cy.wait(1000)
+
   })
 
   it.skip('3 - Pessoa Fisíca Certidão Criminal / Emissão', () => {
